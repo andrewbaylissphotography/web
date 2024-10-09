@@ -128,6 +128,7 @@
 <body>
 
 	<!-- Header START -->
+	<br><br>
 	<header class="w3-display-container w3-content w3-center responsive">
 		<!-- Business Cards/mashups START-->
 		<img class="mySlides w3-animate-opacity responsive"
@@ -136,7 +137,7 @@
 
 		<img class="mySlides w3-animate-opacity responsive"
 			src="https://db5pap001files.storage.live.com/y4meeyj1grWhLHAsIzgPqnc_bu2e4Nps_9Y2KpoqnnnW3Ige6kPsPvNdFGoscOuQa5yzQveQO9U08SiyFqHq9hZwxHIq4Pa0rMIy2nITUCMY-WeqxN2BJuNd8ga1MqR2-EypPVbWWoC8zj4RzKnsinP9vZzpdamQbJPxM1_vrb-R8zyROKJxO6JlOFtdlDCGdVc?width=1024&height=385&cropmode=none"
-			alt="borderlands">
+			alt="Borderlands">
 
 		<img class="mySlides w3-animate-opacity responsive"
 			src="https://db5pap001files.storage.live.com/y4mcJmwQDkNNNTqv02XLcp8eYpzMOaxf1-sPGec0jZBNvnFK1dnQ3QQK0co5MFE1Swy7s7-eKLqPyc5dfb4Mlsz4BBwosJEzr7AO0qHV6AJgS1YhIWvkggfB5eINBpjSnZx3CNsNlMYJFVTbK_5ai6Mj4L5q6OP_mLwidJeDXEu2SIkl6W3-VV46dBU_OtDR2gu?width=1024&height=385&cropmode=none"
@@ -194,6 +195,117 @@
 
 	<!-- Stats START -->
 	<br>
+	<div class="w3-top">
+		<div class="w3-container">
+			<div class="w3-bar w3-black">
+				<a href="#" class="w3-bar-item w3-button w3-mobile w3-blue w3-border-right"><i
+						class="fa fa-home"></i>Home</a>
+
+				<input type="text" class="w3-bar-item w3-mobile w3-input w3-border w3-padding w3-right"
+					placeholder="Search for #tags.." id="myInput" onkeyup="myFunction()">
+
+				<div class="w3-dropdown-click w3-mobile">
+					<button class="w3-button w3-border-right" onclick="clickNavbarPortfolio()">
+						Portfolio <i class="fa fa-caret-down"></i>
+					</button>
+					<div id="clickNavbarPortfolio" class="w3-dropdown-content w3-bar-block w3-dark-grey">
+						<a href="#"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Cosplay</a>
+						<a href="#"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Studio</a>
+						<a href="#"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Wedding</a>
+						<a href="#"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Edited</a>
+						<a href="#"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Monochrome</a>
+					</div>
+				</div>
+
+				<div class="w3-dropdown-click w3-mobile">
+					<button class="w3-button w3-border-right" onclick="clickNavbarGallery()">
+						Gallery <i class="fa fa-caret-down"></i>
+					</button>
+					<div id="clickNavbarGallery" class="w3-dropdown-content w3-bar-block w3-dark-grey">
+
+						<a href="javascript:void(0)" onclick="openImg('OTHER');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">OtherEvents</a>
+
+						<a href="javascript:void(0)" onclick="openImg('AGC');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Anime &
+							Gaming Con</a>
+
+						<a href="javascript:void(0)" onclick="openImg('BEWTSTUDIOS');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Bewt
+							Studios</a>
+
+						<a href="javascript:void(0)" onclick="openImg('CITC');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Cardiff
+							International Tattoo Convention</a>
+
+						<a href="javascript:void(0)" onclick="openImg('COMICTON');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Comic-Ton</a>
+
+						<a href="javascript:void(0)" onclick="openImg('COSXPO');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Cosxpo</a>
+
+						<a href="javascript:void(0)" onclick="openImg('COSBONT');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Cosbont</a>
+
+						<a href="javascript:void(0)" onclick="openImg('CCC');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Comic Con
+							Cymru</a>
+
+						<a href="javascript:void(0)" onclick="openImg('DRAGONDAZE');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Dragondaze</a>
+
+						<a href="javascript:void(0)" onclick="openImg('FUELROCKCLUB');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Fuel Rock
+							Club</a>
+
+						<a href="javascript:void(0)" onclick="openImg('FYF');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Fuel Your
+							Fire</a>
+
+						<a href="javascript:void(0)" onclick="openImg('GEEKFEST');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Geekfest</a>
+
+						<a href="javascript:void(0)" onclick="openImg('INSOMNIA');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Insomnia
+							Gaming Festival</a>
+
+						<a href="javascript:void(0)" onclick="openImg('MEGACON');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">MegaconLive</a>
+
+						<a href="javascript:void(0)" onclick="openImg('MCM');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">MCM Comic
+							Con</a>
+
+						<a href="javascript:void(0)" onclick="openImg('Optimus');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Optimus</a>
+
+						<a href="javascript:void(0)" onclick="openImg('RTX');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">RTX
+							London</a>
+
+						<a href="javascript:void(0)" onclick="openImg('FCC');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Showmasters
+							Film & Comic Con</a>
+
+						<a href="javascript:void(0)" onclick="openImg('UKCGF');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">UKCGF</a>
+
+						<a href="javascript:void(0)" onclick="openImg('WCC');"
+							class="w3-bar-item w3-button w3-mobile w3-hover-black w3-hover-text-light-blue">Wales Comic
+							Con</a>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
 	Portfolio<br>
 	Cosplay
 	<div class="w3-row-padding w3-margin-top">
@@ -201,10 +313,6 @@
 			<div class="w3-card">
 				<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2160726&authkey=%21AAuiK_b_byK0UIY&height=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -212,10 +320,6 @@
 			<div class="w3-card">
 				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg5tQl4bCwHjAQ1Cvuw?embed=1&height=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -223,10 +327,6 @@
 			<div class="w3-card">
 				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7MfL-eGEHAjBsgURw?embed=1&height=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -236,10 +336,6 @@
 			<div class="w3-card">
 				<img src="https://onedrive.live.com/embed?resid=064c16dac0b13cbc%2159165&authkey=%21AH7c5rscQCiw8qU&width=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -247,25 +343,17 @@
 			<div class="w3-card">
 				<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2159871&authkey=%21AHbPXMBb3dYszp0&width=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
 		<div class="w3-third">
 			<div class="w3-card">
-				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg5whSdmySEInYJi4VQ?embed=1&width=1024"
-					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
+				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg5whSdmySEInYJi4VQ?embed=1&width=1024" onclick="onClick(this)"
+					loading="lazy" class="w3-image w3-hover-opacity">
 			</div>
 		</div>
 	</div>
-	
+
 	<br>
 	Studio
 	<div class="w3-row-padding w3-margin-top">
@@ -273,10 +361,6 @@
 			<div class="w3-card">
 				<img src="https://db5pap001files.storage.live.com/y4miiuQOCDr1Emfugd2qWr2fApHQAxi4RKjOZRUVJ92OlVXKNR8BhJJ919T53JNmr-shrsfHJ7v5QeqISaRDbw_DRUH7YfN4PfHoYDn2B1GnBamJIaw3BNC-pm-dlDWrMVDbKDYXt0uUhCUg7avf2G-O384-3ovMAtnjcFGuhE4R7UO_RyUsgr5Ncvyuq-9MZzw?width=680&height=1024&cropmode=none"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -284,10 +368,6 @@
 			<div class="w3-card">
 				<img src="https://db5pap001files.storage.live.com/y4m_WWLI1oTfmnLQfqquwMiSjkN70qF6qwbnVNejtF1xfFcnNlMaZ1NZAzLcoxXV5PPmpuG_-vJxF-px2a6ADAX4WGmehOqF6XY8lXbfYykS9XtkdeF4mGYU1Wn_vaX_c_II7vhVl5qDjZudd3XwTnWlad82Gvk6zXmk7fBR_zIm9PH2jNN02_ZeHO6ALC0-2Tz?width=680&height=1024&cropmode=none"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -295,10 +375,6 @@
 			<div class="w3-card">
 				<img src="https://db5pap001files.storage.live.com/y4mRZc5Dqy6evBNcVSROr0YOqzpjv9lUWdKCvvKGMGVbFPcU75L2JCe4dxNNRfZ1oJ23ojra4Aek4FX8iKlilx6BMkr9aiW5_ZT87XO-jYora4tfVq3HYkFVaInUfqAnebgNwFkNeG16A5rMiaq1s5RPDUxzE0DH5oun7BAagO3tl2uCZ22cj5GSYKKoOdDn32M?width=680&height=1024&cropmode=none"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -306,34 +382,22 @@
 	<div class="w3-row-padding w3-margin-top">
 		<div class="w3-third">
 			<div class="w3-card">
-				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6AqaQX1aNgu208k0Q?embed=1&width=1024"
-					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
+				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6AqaQX1aNgu208k0Q?embed=1&width=1024" onclick="onClick(this)"
+					loading="lazy" class="w3-image w3-hover-opacity">
 			</div>
 		</div>
 
 		<div class="w3-third">
 			<div class="w3-card">
-				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg59hTw7jYhdmOAXYlQ?embed=1&width=1024"
-					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
+				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg59hTw7jYhdmOAXYlQ?embed=1&width=1024" onclick="onClick(this)"
+					loading="lazy" class="w3-image w3-hover-opacity">
 			</div>
 		</div>
 
 		<div class="w3-third">
 			<div class="w3-card">
-				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg8B7GJpJPeWtPYD7kg?embed=1&width=1024"
-					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
+				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg8B7GJpJPeWtPYD7kg?embed=1&width=1024" onclick="onClick(this)"
+					loading="lazy" class="w3-image w3-hover-opacity">
 			</div>
 		</div>
 	</div>
@@ -345,10 +409,6 @@
 			<div class="w3-card">
 				<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2158588&authkey=%21AEjwTq4MKWS7Cp4&width=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -356,10 +416,6 @@
 			<div class="w3-card">
 				<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2158592&authkey=%21ADI6armvSOLpm20&width=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -367,10 +423,6 @@
 			<div class="w3-card">
 				<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2158587&authkey=%21AOH26kqwK_9c2Xo&width=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -382,10 +434,6 @@
 			<div class="w3-card">
 				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7I0WCAAEO9CXQwirg?embed=1&height=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -393,10 +441,6 @@
 			<div class="w3-card">
 				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6tcfbSTD3dLA0Zynw?embed=1&height=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -404,10 +448,6 @@
 			<div class="w3-card">
 				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6QFnlpRWXNEM_dHNA?embed=1&height=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -417,32 +457,20 @@
 			<div class="w3-card">
 				<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2159834&authkey=%21AAoPm_JkueNSUOI&width=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
 		<div class="w3-third">
 			<div class="w3-card">
-				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg61OWKgGmbtugqxNAQ?embed=1&width=1024"
-					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
+				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg61OWKgGmbtugqxNAQ?embed=1&width=1024" onclick="onClick(this)"
+					loading="lazy" class="w3-image w3-hover-opacity">
 			</div>
 		</div>
 
 		<div class="w3-third">
 			<div class="w3-card">
-				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg90oG1Gnah16ZNZrYQ?embed=1&width=1024"
-					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
+				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg90oG1Gnah16ZNZrYQ?embed=1&width=1024" onclick="onClick(this)"
+					loading="lazy" class="w3-image w3-hover-opacity">
 			</div>
 		</div>
 	</div>
@@ -454,10 +482,6 @@
 			<div class="w3-card">
 				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg5xiigDJWKzy6LvYBQ?embed=1&height=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -465,10 +489,6 @@
 			<div class="w3-card">
 				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg5ValSx7rnYMOD7-5g?embed=1&height=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
@@ -476,10 +496,6 @@
 			<div class="w3-card">
 				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg58cQE1bOuz-7j8fTw?embed=1&height=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -489,32 +505,20 @@
 			<div class="w3-card">
 				<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153207&authkey=%21ALX4D5zOkgIUqQs&width=1024"
 					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
 			</div>
 		</div>
 
 		<div class="w3-third">
 			<div class="w3-card">
-				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6A_OjFvkGsTPXCGZQ?embed=1&width=1024"
-					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
+				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6A_OjFvkGsTPXCGZQ?embed=1&width=1024" onclick="onClick(this)"
+					loading="lazy" class="w3-image w3-hover-opacity">
 			</div>
 		</div>
 
 		<div class="w3-third">
 			<div class="w3-card">
-				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg54wvN9J5eeKxjzVDw?embed=1&width=1024"
-					onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-				<div class="w3-container">
-					<!-- ImageTags -->
-					<h5></h5>
-				</div>
+				<img src="https://1drv.ms/i/s!Arw8scDaFkwGg54wvN9J5eeKxjzVDw?embed=1&width=1024" onclick="onClick(this)"
+					loading="lazy" class="w3-image w3-hover-opacity">
 			</div>
 		</div>
 	</div>
@@ -556,12 +560,13 @@
 	</div>
 	<!-- Stats END -->
 
-	<div class="w3-container">
-		<p id="TOP">Click on the images below, this will allow you to see all the photos taken at that event</p>
-	</div>
+
 
 	<!-- Event Headings START -->
-	<div class="w3-row-padding w3-center">
+	<div class="w3-container">
+		<p id="TOP"></p>
+	</div>
+	<!-- 	<div class="w3-row-padding w3-center">
 
 		<div class="w3-col w3-container w3-quarter w3-hover-black w3-hover-text-light-blue">
 			<a href="javascript:void(0)" onclick="openImg('OTHER');">
@@ -703,13 +708,14 @@
 			</a>
 		</div>
 
-	</div>
+	</div> -->
 	<!-- Event Headings END -->
 
 	<!-- Event Photos -->
 	<div>
-		<input class="w3-input w3-border w3-padding " type="text" placeholder="Search for #tags.." id="myInput"
-			onkeyup="myFunction()">
+
+<!-- 		<input class="w3-input w3-border w3-padding " type="text" placeholder="Search for #tags.." id="myInput"
+			onkeyup="myFunction()"> -->
 
 		<ul class="w3-ul w3-margin-top" id="myUL">
 
@@ -744,7 +750,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>tak attack cosplay, the punisher; </h5>
+								<h5>Tak Attack Cosplay, the punisher; </h5>
 							</div>
 						</div>
 					</div>
@@ -755,7 +761,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>tak attack cosplay, the punisher; </h5>
+								<h5>Tak Attack Cosplay, the punisher; </h5>
 							</div>
 						</div>
 					</div>
@@ -845,7 +851,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>tak attack cosplay, the punisher; </h5>
+								<h5>Tak Attack Cosplay, the punisher; </h5>
 							</div>
 						</div>
 					</div>
@@ -856,7 +862,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>tak attack cosplay, the punisher; </h5>
+								<h5>Tak Attack Cosplay, the punisher; </h5>
 							</div>
 						</div>
 					</div>
@@ -970,7 +976,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>tak attack cosplay, evil dead; </h5>
+								<h5>Tak Attack Cosplay, evil dead; </h5>
 							</div>
 						</div>
 					</div>
@@ -985,7 +991,6 @@
 								<!-- ImageTags -->
 								<h5>batman, robin, Jman; </h5>
 							</div>
-
 						</div>
 					</div>
 
@@ -4817,7 +4822,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -4830,7 +4835,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -4841,7 +4846,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -4852,7 +4857,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -4865,7 +4870,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -4876,7 +4881,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -4887,7 +4892,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -4900,7 +4905,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -4911,7 +4916,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -4935,7 +4940,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -7641,7 +7646,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands, handsome jack; </h5>
+								<h5>Borderlands, handsome jack; </h5>
 							</div>
 						</div>
 					</div>
@@ -7652,7 +7657,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands, handsome jack; </h5>
+								<h5>Borderlands, handsome jack; </h5>
 							</div>
 						</div>
 					</div>
@@ -7663,7 +7668,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands, tiny tina, bekz cosplay; </h5>
+								<h5>Borderlands, tiny tina, bekz cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -7676,7 +7681,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands, moxxi; </h5>
+								<h5>Borderlands, moxxi; </h5>
 							</div>
 						</div>
 					</div>
@@ -8895,7 +8900,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>invisible trickster, triple threat, borderlands, rhys; </h5>
+								<h5>invisible trickster, triple threat, Borderlands, rhys; </h5>
 							</div>
 						</div>
 					</div>
@@ -8930,7 +8935,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands, handsome jack, crunchyumbrella cosplay; </h5>
+								<h5>Borderlands, handsome jack, crunchyumbrella cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -8943,7 +8948,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands, handsome jack, crunchyumbrella cosplay; </h5>
+								<h5>Borderlands, handsome jack, crunchyumbrella cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -9025,7 +9030,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>invisible trickster, lavish bookman, triple threat, borderlands; </h5>
+								<h5>invisible trickster, lavish bookman, triple threat, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -9060,7 +9065,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>invisible trickster, lavish bookman, triple threat, borderlands; </h5>
+								<h5>invisible trickster, lavish bookman, triple threat, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -10011,7 +10016,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -10022,7 +10027,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -13952,7 +13957,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>tak attack cosplay; </h5>
+								<h5>Tak Attack Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -20096,7 +20101,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay, borderlands; </h5>
+								<h5>Lemonbird Cosplay, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -20107,7 +20112,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay, borderlands; </h5>
+								<h5>Lemonbird Cosplay, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -20118,7 +20123,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay, borderlands; </h5>
+								<h5>Lemonbird Cosplay, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -20131,7 +20136,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay, borderlands; </h5>
+								<h5>Lemonbird Cosplay, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21608,7 +21613,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>kelly jean, borderl; </h5>
+								<h5>Kelly Jean, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21619,7 +21624,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>kelly jean; </h5>
+								<h5>Kelly Jean, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21630,7 +21635,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21643,7 +21648,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay, borderlands; </h5>
+								<h5>Lemonbird Cosplay, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21654,7 +21659,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>toya jax cosplay; </h5>
+								<h5>Toya Jax Cosplay, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21665,7 +21670,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21678,7 +21683,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay, borderlands; </h5>
+								<h5>Lemonbird Cosplay, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21689,7 +21694,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay, borderlands; </h5>
+								<h5>Lemonbird Cosplay, Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21700,7 +21705,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21713,7 +21718,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21724,7 +21729,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21735,7 +21740,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21748,7 +21753,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21759,7 +21764,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21854,7 +21859,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21878,7 +21883,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21889,7 +21894,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21900,7 +21905,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21913,7 +21918,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21924,7 +21929,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21935,7 +21940,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21948,7 +21953,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Handsome Jackson Cosplay; </h5>
+								<h5>Borderlands, Handsome Jackson Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -21959,7 +21964,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -21970,7 +21975,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>toya jax cosplay; </h5>
+								<h5>Borderlands, Gaige, Toya Jax Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -21983,7 +21988,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands, Nisha; </h5>
 							</div>
 						</div>
 					</div>
@@ -21994,7 +21999,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Borderlands, Nisha; </h5>
 							</div>
 						</div>
 					</div>
@@ -22005,7 +22010,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Cyberpunk 2077; </h5>
 							</div>
 						</div>
 					</div>
@@ -22649,7 +22654,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>PurpleDragonUK; </h5>
 							</div>
 						</div>
 					</div>
@@ -22708,7 +22713,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Level Up Leroy; </h5>
 							</div>
 						</div>
 					</div>
@@ -22907,7 +22912,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>PurpleDragonUK; </h5>
 							</div>
 						</div>
 					</div>
@@ -22942,7 +22947,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>PurpleDragonUK; </h5>
 							</div>
 						</div>
 					</div>
@@ -23012,7 +23017,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Miss T Cosplay, gothams candy; </h5>
+								<h5>Miss T Cosplay, Gothams Candy; </h5>
 							</div>
 						</div>
 					</div>
@@ -23025,7 +23030,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Rooster Teeth, RWBY; </h5>
 							</div>
 						</div>
 					</div>
@@ -23036,7 +23041,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Rooster Teeth, RWBY; </h5>
 							</div>
 						</div>
 					</div>
@@ -23082,7 +23087,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Rooster Teeth, RWBY; </h5>
 							</div>
 						</div>
 					</div>
@@ -23182,7 +23187,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>Miss T Cosplay, gothams candy; </h5>
+								<h5>Miss T Cosplay, Gothams Candy; </h5>
 							</div>
 						</div>
 					</div>
@@ -23195,7 +23200,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Gothams Candy; </h5>
 							</div>
 						</div>
 					</div>
@@ -23206,7 +23211,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Rooster Teeth, RWBY; </h5>
 							</div>
 						</div>
 					</div>
@@ -23546,7 +23551,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23557,7 +23562,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23568,7 +23573,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23581,7 +23586,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23606,7 +23611,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23617,7 +23622,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23628,7 +23633,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23641,7 +23646,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23652,7 +23657,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23663,7 +23668,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23676,7 +23681,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23687,7 +23692,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23698,7 +23703,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23711,7 +23716,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23722,7 +23727,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23733,7 +23738,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Luke Blight, Charlie-Jane Barber; </h5>
 							</div>
 						</div>
 					</div>
@@ -23768,7 +23773,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Star Wars; </h5>
 							</div>
 						</div>
 					</div>
@@ -23779,7 +23784,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Star Wars; </h5>
 							</div>
 						</div>
 					</div>
@@ -23933,7 +23938,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Cosplay dave, Iron Warrior Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -23944,7 +23949,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Tak Attack Cosplay ; </h5>
 							</div>
 						</div>
 					</div>
@@ -23955,7 +23960,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>Dr Who, Tak Attack Cosplay ; </h5>
 							</div>
 						</div>
 					</div>
@@ -26935,7 +26940,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands, handsome jack; </h5>
+								<h5>Borderlands, handsome jack; </h5>
 							</div>
 						</div>
 					</div>
@@ -27146,7 +27151,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>fallout, borderlands, gaige; </h5>
+								<h5>fallout, Borderlands, gaige; </h5>
 							</div>
 						</div>
 					</div>
@@ -27192,7 +27197,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands, handsome jack; </h5>
+								<h5>Borderlands, handsome jack; </h5>
 							</div>
 						</div>
 					</div>
@@ -27308,7 +27313,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands, tiny tina; </h5>
+								<h5>Borderlands, tiny tina; </h5>
 							</div>
 						</div>
 					</div>
@@ -27461,7 +27466,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>kelly jean; </h5>
+								<h5>Kelly Jean; </h5>
 							</div>
 						</div>
 					</div>
@@ -27472,7 +27477,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>kelly jean; </h5>
+								<h5>Kelly Jean; </h5>
 							</div>
 						</div>
 					</div>
@@ -27829,7 +27834,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands, Handsome Jack; </h5>
+								<h5>Borderlands, Handsome Jack; </h5>
 							</div>
 						</div>
 					</div>
@@ -27864,7 +27869,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>borderlands; </h5>
+								<h5>Borderlands; </h5>
 							</div>
 						</div>
 					</div>
@@ -28067,7 +28072,7 @@
 								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -30315,7 +30320,7 @@
 								class="w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>tak Attack cosplay; </h5>
+								<h5>Tak Attack Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -30365,7 +30370,7 @@
 								class="w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -30377,7 +30382,7 @@
 								class="w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -30389,7 +30394,7 @@
 								class="w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -30555,7 +30560,7 @@
 								class="w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -30567,7 +30572,7 @@
 								class="w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -30579,7 +30584,7 @@
 								class="w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>lemonbird cosplay; </h5>
+								<h5>Lemonbird Cosplay; </h5>
 							</div>
 						</div>
 					</div>
@@ -30631,6 +30636,1637 @@
 			<!-- FYF START -->
 			<div id="FYF" class="picture" style="display:none">
 
+				<!--2018.04.00 - Fuel Your Fire START -->
+				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+					<h3 id="20180429">--2018.04.29 - Fuel Your Fire--</h3>
+
+					<a href="#TOP">[TOP]</a>
+
+				</header>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153508&authkey=%21ABVW7sTiVDeOHng&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153503&authkey=%21ACtQzF43vUa5X7U&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153505&authkey=%21ALvBHfcVYoNf7-Q&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153501&authkey=%21ALk5zK2Zu1yVETQ&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153506&authkey=%21AGv5YljKDADAr20&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153497&authkey=%21AE3FZMJ3egOWy4k&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153500&authkey=%21ACG0ZwnsyFItKJw&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153500&authkey=%21ACG0ZwnsyFItKJw&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153500&authkey=%21ACG0ZwnsyFItKJw&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--2018.04.00 - Fuel Your Fire END -->
+
+				<!--2018.03.25 - Fuel Your Fire START -->
+				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+					<h3 id="20180325">--2018.03.25 - Fuel Your Fire--</h3>
+
+					<a href="#TOP">[TOP]</a>
+
+				</header>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153469&authkey=%21AIjc-ype-QJ1SBE&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153467&authkey=%21AJ2wricmG-txCwc&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153463&authkey=%21ALibNPq8AaO3KDA&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153464&authkey=%21AOaGjmD49Napnbs&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153464&authkey=%21AOaGjmD49Napnbs&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153468&authkey=%21AP0OW8evSHGTTnw&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153461&authkey=%21AGmo30ezqy4-zWg&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153458&authkey=%21AK71GWMO7OepXGQ&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153473&authkey=%21AIkMWjxUi2PPskg&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153466&authkey=%21AP4fbMcaLdAnATc&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153462&authkey=%21AG3epCK4rA79TZk&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153457&authkey=%21AAVT7XFBDTm7fJQ&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153470&authkey=%21AD6qA9iCtnAmSLo&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153465&authkey=%21AFcLaWpsXWjLLIo&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--2018.03.25 - Fuel Your Fire END -->
+
+				<!--2018.02.00 - Fuel Your Fire START -->
+				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+					<h3 id="20180200">--2018.02.00 - Fuel Your Fire--</h3>
+
+					<a href="#TOP">[TOP]</a>
+
+				</header>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153459&authkey=%21AHg03asgnCFysB0&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153455&authkey=%21ADhVBxEBxeJFNkI&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153453&authkey=%21AOS7Gbz1RvD7aZk&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153456&authkey=%21ANopJchVtDH-50w&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153452&authkey=%21AIv3PAGl8vKFRtU&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153454&authkey=%21AB9JlmiIxUj2biY&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153448&authkey=%21ANeqkTqdvvQQ2gQ&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153447&authkey=%21ABve35J4RLNS9k8&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153449&authkey=%21AIDjSQAgQV2v8Zs&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153451&authkey=%21AKjGC1jRjPoqiWU&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+					</div>
+
+					<div class="w3-third">
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153445&authkey=%21AE5WwIQmnbGl0Mc&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+					</div>
+
+					<div class="w3-third">
+					</div>
+				</div>
+
+				<!--2018.02.00 - Fuel Your Fire END -->
+
+				<!--2017.12.00 - Fuel Your Fire START -->
+				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+					<h3 id="20171200">--2017.12.00 - Fuel Your Fire--</h3>
+
+					<a href="#TOP">[TOP]</a>
+
+				</header>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153450&authkey=%21ALcwB7GXOntViec&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153440&authkey=%21ANSSmL7q2oKNmQE&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153438&authkey=%21AMi7wakwpREITDk&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153444&authkey=%21AHEbGiJr2JjK5ok&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153446&authkey=%21AHU46CMXax0nQM0&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153441&authkey=%21AHXHlk0vjZfVo8s&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153442&authkey=%21ADtdSm1v-v8bqZA&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153443&authkey=%21ALCiMSkpROj9CFc&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153439&authkey=%21AIOOlNkl1CjyGHg&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153435&authkey=%21ALdfv2lWLhd1AwE&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+					</div>
+
+					<div class="w3-third">
+					</div>
+				</div>
+
+				<!--2017.12.00 - Fuel Your Fire END -->
+
+				<!--2017.11.00 - Fuel Your Fire START -->
+				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+					<h3 id="20171100">--2017.11.00 - Fuel Your Fire--</h3>
+
+					<a href="#TOP">[TOP]</a>
+
+				</header>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153437&authkey=%21ACBRR03vFWdLgYU&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153433&authkey=%21ABELTGWL7rbwWaU&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153430&authkey=%21ACG8anJ9WpFHT_8&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153434&authkey=%21AFCt4P0HG_wjv_g&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153425&authkey=%21ACvF1mud9RApJt0&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153422&authkey=%21ABc0IxS6alXdExc&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153419&authkey=%21AOA3CwfMXtox2YQ&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153420&authkey=%21AA-ovHm2nzusLzY&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153415&authkey=%21AOtCU2d0Qqp_E_I&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153409&authkey=%21ANuQC7bcsUxwT1k&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+					</div>
+
+					<div class="w3-third">
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153436&authkey=%21AAbwwW7pojwYQJs&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153432&authkey=%21ADO8-i3noY3DXhs&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153431&authkey=%21AIDWWs0jtX_DEnk&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153428&authkey=%21AMbPWWQUab_w_u8&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153429&authkey=%21AO0LxinA1f57h8g&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153424&authkey=%21ACV89q-doLAFEbw&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153423&authkey=%21AIffLe83h_LlFa4&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153426&authkey=%21AOK-hwkQJvng2_E&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153427&authkey=%21ACQe_j8Yabrhu_g&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153421&authkey=%21ACRhuG_rNlIxjHI&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153414&authkey=%21AFfoBjcFojG_PoI&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153416&authkey=%21AOQkNKGudzIeYEs&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153417&authkey=%21ABjP_rzQ_UVoY7A&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153411&authkey=%21AMuxQu56LF7Gyr8&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153418&authkey=%21AMYin9jQTvWDC0Y&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153412&authkey=%21AF7gPjUHz1ITATo&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153410&authkey=%21ABk1j6rkLS-YdR4&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153408&authkey=%21AMtfv5Dhvz4D_0c&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--2017.11.00 - Fuel Your Fire END -->
+
+				<!--2017.09.00 - Fuel Your Fire START -->
+				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+					<h3 id="20170900">--2017.09.00 - Fuel Your Fire--</h3>
+
+					<a href="#TOP">[TOP]</a>
+
+				</header>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153406&authkey=%21ACCr58_uI1-jj00&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153407&authkey=%21AEl2KVcY-7T8pRI&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153413&authkey=%21AI7gMErvXaVigUM&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--2017.09.00 - Fuel Your Fire END -->
+
+				<!--2017.08.00 - Fuel Your Fire START -->
+				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+					<h3 id="20170800">--2017.08.00 - Fuel Your Fire--</h3>
+
+					<a href="#TOP">[TOP]</a>
+
+				</header>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153400&authkey=%21AL-dUJHRXkZZc58&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153405&authkey=%21AAK4t6AwrbRxlfE&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153399&authkey=%21AK8K4Aec9NJady0&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153397&authkey=%21AFKpS6V94DvINC4&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+					</div>
+
+					<div class="w3-third">
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153402&authkey=%21AEI2Q7AUyZE-l9A&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153403&authkey=%21APzxvpfLlF8b-5E&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153396&authkey=%21ADoTHvXHV6Z02EI&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--2017.08.00 - Fuel Your Fire END -->
+
+				<!--2017.04.16 - Fuel Your Fire START -->
+				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+					<h3 id="20170416">--2017.04.16 - Fuel Your Fire--</h3>
+
+					<a href="#TOP">[TOP]</a>
+
+				</header>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153404&authkey=%21AAo1vbT994lXwDA&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153401&authkey=%21ACMTER3C0nzIDGE&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153392&authkey=%21AMAYqES1HNJcDBw&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153394&authkey=%21AGASyg2apLVbOhQ&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153389&authkey=%21ANSGKZudxnmXCgY&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153390&authkey=%21APeoVkeGuZX1-Ok&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153384&authkey=%21ABtheI9JDoDZNLk&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153380&authkey=%21AJnwHnbUaUKW_Uo&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153378&authkey=%21ABcZKuznS-9_uZo&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153381&authkey=%21AIIQPzIdKUhoGRU&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153383&authkey=%21ABUVgNtgha8fCfw&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153379&authkey=%21AIq-HQV4L8aIsAw&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153398&authkey=%21ACCfv5StWy2TIyw&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153395&authkey=%21APBbvdA1r5LHqkc&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153387&authkey=%21AKpNizHvC7gr8LM&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153391&authkey=%21AFt9mwUgtONbhn8&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153385&authkey=%21AORQxAhAqpQDr9g&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153393&authkey=%21ADI-VhYU6iLuOg0&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153388&authkey=%21AGfT55vlcS8Mzqs&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153377&authkey=%21AHXfin-4rD69oN0&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+					</div>
+				</div>
+
+				<!--2017.04.16 - Fuel Your Fire END -->
+
+				<!--2017.03.00 - Fuel Your Fire START -->
+				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+					<h3 id="20170300">--2017.03.00 - Fuel Your Fire--</h3>
+
+					<a href="#TOP">[TOP]</a>
+
+
+				</header>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153382&authkey=%21AKusLqGqwzJI8hA&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153374&authkey=%21AKzA0YQ3v6K4c8A&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153371&authkey=%21AKYcuN_6hH4iTVk&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153365&authkey=%21AFO1K1Tscpp3qsc&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153366&authkey=%21AHUnkpdw5Nv4rug&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153363&authkey=%21ALZxBvKkJ-zbCZI&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153360&authkey=%21AGmy_sJOuf_C-gw&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153361&authkey=%21APWUzos_wHyzy1E&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153356&authkey=%21AGQeTNdCnn2M9mc&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153362&authkey=%21ABOfXE0ngYaJyRQ&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153359&authkey=%21ABGOrL4nXsbnpJY&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153359&authkey=%21ABGOrL4nXsbnpJY&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153372&authkey=%21AEUAGB9khIbO0wc&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153370&authkey=%21AM4XZrOii6BCxCM&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153369&authkey=%21ABXTYKLV0WD_msE&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153368&authkey=%21AFewM5ISHOCwod8&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153375&authkey=%21AEGu67QdXsyR8NQ&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153373&authkey=%21AGX_uUz49VVlE_M&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153376&authkey=%21ABq1KpfmMvYZuCc&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153364&authkey=%21AGkBWAx3gpC9OGU&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153367&authkey=%21ANcDmrIXnH0yKNc&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153358&authkey=%21ANKe0KLCPTFJfdQ&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153357&authkey=%21AISxMVFw9z4bVzo&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153357&authkey=%21AISxMVFw9z4bVzo&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--2017.03.00 - Fuel Your Fire END -->
+
 				<!--2017.02.00 - Fuel Your Fire START -->
 				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 					<h3 id="20170100">--2017.02.00 - Fuel Your Fire--</h3>
@@ -30643,38 +32279,434 @@
 				<div class="w3-row-padding w3-margin-top">
 					<div class="w3-third">
 						<div class="w3-card">
-							<img src="file:///C:/Windows/Web/Screen/img100.jpg" onclick="onClick(this)" loading="lazy"
-								class="w3-image w3-hover-opacity">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153355&authkey=%21ALrAjZI7Wr1hYDw&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153350&authkey=%21AN_W_4e_dfPldjM&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
 							</div>
 						</div>
 					</div>
 
 					<div class="w3-third">
 						<div class="w3-card">
-							<img src="file:///C:/Windows/Web/Screen/img100.jpg" onclick="onClick(this)" loading="lazy"
-								class="w3-image w3-hover-opacity">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153352&authkey=%21AJm18S4KLces9rc&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 							<div class="w3-container">
 								<!-- ImageTags -->
-								<h5>; </h5>
-							</div>
-						</div>
-					</div>
-
-					<div class="w3-third">
-						<div class="w3-card">
-							<img src="file:///C:/Windows/Web/Screen/img100.jpg" onclick="onClick(this)" loading="lazy"
-								class="w3-image w3-hover-opacity">
-							<div class="w3-container">
-								<!-- ImageTags -->
-								<h5>; </h5>
+								<h5>;</h5>
 							</div>
 						</div>
 					</div>
 				</div>
 
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153353&authkey=%21AISrlZf0HfLFpwQ&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153351&authkey=%21AOSLhMmgrUaXmxI&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153349&authkey=%21ALgoa0fGC9RO0xE&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153348&authkey=%21ACeWB7evgbrHA2g&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153346&authkey=%21AFbDSCXp1FFX1Yo&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153347&authkey=%21ABUqz9pJHSMKYIY&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153342&authkey=%21AJPnLSrtC1YwOEI&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153344&authkey=%21ADpF0T7fGwTDoZk&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153343&authkey=%21AGyvTyXcr-F5UTE&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153345&authkey=%21APQoR2dD9c0rD6I&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153337&authkey=%21AOM_dsJ4URyaI8Y&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153336&authkey=%21AHN7veHynd7s44I&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153334&authkey=%21AL2SRWh4bNXKTLM&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153327&authkey=%21AKAGIOmN0RdQXgU&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153326&authkey=%21AMg6CVcGNTtPcmg&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153328&authkey=%21ACVkGh5Gg0RMzWY&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153324&authkey=%21AAjlg_AkQC-ERAc&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153325&authkey=%21ALKEB4ZCwHkoU14&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153320&authkey=%21ABpT-8mwCJ33t_A&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153320&authkey=%21ABpT-8mwCJ33t_A&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153320&authkey=%21ABpT-8mwCJ33t_A&height=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153354&authkey=%21AF5acyYmmsxyGgs&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153341&authkey=%21AFhZsWS9bgBCYpE&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153340&authkey=%21AAnuT93_7zk4gxU&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153338&authkey=%21AEJt-jqlpZ17R-4&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153335&authkey=%21AIZU4PiRySgPWQE&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153335&authkey=%21AIZU4PiRySgPWQE&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153333&authkey=%21ADLnr_ycxm2WVO0&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153330&authkey=%21ANZB4fPiSDz4Jnc&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153332&authkey=%21AKl54Ahn3asJF6A&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row-padding w3-margin-top">
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153329&authkey=%21AICNN2_klrC5whE&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153331&authkey=%21AHUUMMU2TTJ5lPk&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-third">
+						<div class="w3-card">
+							<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153331&authkey=%21AHUUMMU2TTJ5lPk&width=1024"
+								onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+							<div class="w3-container">
+								<!-- ImageTags -->
+								<h5>;</h5>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<!--2017.02.00 - Fuel Your Fire END -->
 
@@ -34450,7 +36482,7 @@
 
 				<!-- GEEKFEST START -->
 				<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
-					<h3 id="GEEKFEST">--GEEKFEST--</h3>
+					<h3 id="GEEKFESTxxx">--GEEKFESTxxx--</h3>
 
 					<a href="#TOP">[TOP]</a>
 
@@ -36689,8 +38721,10 @@
 		<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 			<h3>
 
-				<a href="https://filmandcomicconcardiff.com/" target="_blank">[2024.10 - Cardiff Film and Comic Con]</a><br>
-				<a href="https://www.mcmcomiccon.com/london/en-us/home.html" target="_blank">[2024.10 - MCM Comic Con London]</a><br>
+				<a href="https://filmandcomicconcardiff.com/" target="_blank">[2024.10 - Cardiff Film and Comic
+					Con]</a><br>
+				<a href="https://www.mcmcomiccon.com/london/en-us/home.html" target="_blank">[2024.10 - MCM Comic Con
+					London]</a><br>
 
 			</h3>
 		</header>
@@ -36698,7 +38732,8 @@
 		<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 			<h3>
 
-				<a href="https://www.mcmcomiccon.com/birmingham/en-us/home.html" target="_blank">[2024.11 - MCM Comic Con Birmingham]</a><br>
+				<a href="https://www.mcmcomiccon.com/birmingham/en-us/home.html" target="_blank">[2024.11 - MCM Comic
+					Con Birmingham]</a><br>
 
 			</h3>
 		</header>
@@ -36867,7 +38902,7 @@
 			</h3>
 			<h3>
 
-				2017.12 - Fuel Yuor Fire <br>
+				2017.12 - Fuel Your Fire <br>
 				2017.11 - Fuel Your Fire <br>
 				2017.11 - Flim & Comic Con Cardiff <br>
 				2017.10 - MCM Comic Con London <br>
@@ -37029,7 +39064,8 @@
 		</b></p>
 		<b>
 			<p>
-				&emsp;Insomnia Gaming Festival - Attended 5 times since 2019. as of June 2024 Insomina went into liquidation<br>
+				&emsp;Insomnia Gaming Festival - Attended 5 times since 2019. as of June 2024 Insomina went into
+				liquidation<br>
 		</b></p>
 		<p>
 			&emsp;This event is split into 2 parts. you have the convention side, which is your typical convention but
@@ -37042,7 +39078,8 @@
 				&emsp;Vtuber Expo - Attended 1 times since 2024<br>
 		</b></p>
 		<p>
-			&emsp;I have known about Vtubers for a while but not really got into it. i find it technically interesting. after going i was inspired to give it ago.<br>
+			&emsp;I have known about Vtubers for a while but not really got into it. i find it technically interesting.
+			after going i was inspired to give it ago.<br>
 			&emsp;if i didnt go with friends i would not have gone but im glad that i did go with friends.<br>
 		</p>
 
@@ -37087,7 +39124,8 @@
 		</p>
 		<b>
 			<p>
-				&emsp;Cosxpo - Attended 4 times since 2018. as of 2024 cosxpo no longer runs due to owner not passing the torch and settling down<br>
+				&emsp;Cosxpo - Attended 4 times since 2018. as of 2024 cosxpo no longer runs due to owner not passing
+				the torch and settling down<br>
 		</b></p>
 
 		<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
@@ -37251,6 +39289,28 @@
 			document.getElementById("modal01").style.display = "block";
 		}
 		// <!-- popoutImage:End -->
+
+		// <!-- Clickable Navbar Portfolio:Start -->
+		function clickNavbarPortfolio() {
+			var x = document.getElementById("clickNavbarPortfolio");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		// <!-- Clickable Navbar Portfolio:End -->
+
+		// <!-- Clickable Navbar Gallery:Start -->
+		function clickNavbarGallery() {
+			var x = document.getElementById("clickNavbarGallery");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		// <!-- Clickable Navbar Portfolio:End -->
 
 	</script>
 

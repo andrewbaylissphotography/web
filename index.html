@@ -94,7 +94,7 @@
 		cursor: pointer;
 	}
 
-	/* Dark mode styles */
+	/* DARKMODE CSS START */
 	body.dark-mode {
 		background-color: #333333;
 		color: #ffffff;
@@ -123,6 +123,32 @@
 	}
 
 	/* DARKMODE CSS END */
+
+	/* imageloader START */
+	.loader {
+		width: 40px;
+		height: 40px;
+		margin: 0 auto;
+		border: 3px solid #FF9900;
+		border-radius: 50%;
+		border-top-color: transparent;
+		animation: rotate 1s infinite linear;
+	}
+
+	@keyframes rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	/* imageloader END */
+	/*<div class="loader">
+		<div class="line"></div>
+		</div>*/
 </style>
 
 <body>
@@ -134,29 +160,28 @@
 		<img class="mySlides w3-animate-opacity responsive"
 			src="https://db5pap001files.storage.live.com/y4mpkLIWbrbuahzLtNF6HkdPWA17dp780Acr02uuJcnQzIY3eV3Z9N-dhW6gyshiF9tksg6gRn4wXf4s9UIszE67IjETt5SelvwXGTjGmv_6fgIVM4o4sDH5_-ccY61wd54p2zLbXOb4V2Z6cE0CiRjAhTuBgsp2rQRHkfr6hLUZkMh4IGf4aeC9O-_lJ6Jq2Yj?width=1024&height=385&cropmode=none"
 			alt="bewt">
-
 		<img class="mySlides w3-animate-opacity responsive"
 			src="https://db5pap001files.storage.live.com/y4meeyj1grWhLHAsIzgPqnc_bu2e4Nps_9Y2KpoqnnnW3Ige6kPsPvNdFGoscOuQa5yzQveQO9U08SiyFqHq9hZwxHIq4Pa0rMIy2nITUCMY-WeqxN2BJuNd8ga1MqR2-EypPVbWWoC8zj4RzKnsinP9vZzpdamQbJPxM1_vrb-R8zyROKJxO6JlOFtdlDCGdVc?width=1024&height=385&cropmode=none"
 			alt="Borderlands">
-
 		<img class="mySlides w3-animate-opacity responsive"
 			src="https://db5pap001files.storage.live.com/y4mcJmwQDkNNNTqv02XLcp8eYpzMOaxf1-sPGec0jZBNvnFK1dnQ3QQK0co5MFE1Swy7s7-eKLqPyc5dfb4Mlsz4BBwosJEzr7AO0qHV6AJgS1YhIWvkggfB5eINBpjSnZx3CNsNlMYJFVTbK_5ai6Mj4L5q6OP_mLwidJeDXEu2SIkl6W3-VV46dBU_OtDR2gu?width=1024&height=385&cropmode=none"
 			alt="fyf">
-
 		<img class="mySlides w3-animate-opacity responsive"
 			src="https://db5pap001files.storage.live.com/y4mlU5U8jBQ2eVfuxznYXW41-BbpUOjw_AIkvfg0doU9_yuNBjEbmsVsaZpghxVe_fqYBU00jF7XP8mVLqfEUdk8zSe-JeztNKYiXfsYnMsqOxV4XeoTAekFPxk-u808vUBNAYvv_Lxf9kim448j0KIIdAWuM6TYh4PtYz0QlVtO8y0qBUv4nOc7hqtkSJ8iyh6?width=1024&height=385&cropmode=none"
 			alt="mcm ldn">
-
 		<img class="mySlides w3-animate-opacity responsive"
 			src="https://db5pap001files.storage.live.com/y4mvEoYjaJftiskKzkDVukJQu1CtOpr5bBSbCagNsZ5YcgGk3Wztwwmq7BE0A6tl-Sf3akOeOB_QSuDGQ0DI-u-peNFFCdynFsWo_mqPWLSryCiXhpXqoMbE0FmJ2gj0QG1By_4xVnqzxed60twpM4a49ZLDIT-byINJq0RuZVoTVWu_YbPNh7PwtnhLdt6nQh-?width=1024&height=385&cropmode=none"
 			alt="rwby">
-
 		<br>
 		<!-- Business Cards/mashups END-->
 
 		<!-- Navbar START (placed at the bottom of the header image) -->
 		<br>
 		<div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+
+			<a href="https://linktr.ee/cababs" target="_blank"><i
+					class="fa fa-linktree w3-hover-opacity w3-hover-text-indigo w3-center w3-xxlarge"></i></a>
+
 			<a href="https://www.facebook.com/AndrewBaylissPhotography" target="_blank"><i
 					class="fa fa-facebook-official w3-hover-opacity w3-hover-text-indigo w3-center w3-xxlarge"></i></a>
 			<a href="https://www.youtube.com/channel/UCmXziGJv5KI5gjs8a0em-5g" target="_blank"><i
@@ -193,7 +218,7 @@
 
 	<!-- Page content -->
 
-	<!-- Stats START -->
+	<!-- NavBar START -->
 	<br>
 	<div class="w3-top">
 		<div class="w3-container">
@@ -201,11 +226,13 @@
 				<a href="#" class="w3-bar-item w3-button w3-mobile w3-blue w3-border-right"><i
 						class="fa fa-home"></i>Home</a>
 
+				<i class="fa fa-search w3-right w3-bar-item w3-mobile  w3-hide-small"></i>
 				<input type="text" class="w3-bar-item w3-mobile w3-input w3-border w3-padding w3-right"
 					placeholder="Search for #tags.." id="myInput" onkeyup="myFunction()">
 
+
 				<div class="w3-dropdown-click w3-mobile">
-					<button class="w3-button w3-border-right" onclick="clickNavbarPortfolio()">
+					<button class="w3-button w3-border-right w3-hide-small" onclick="clickNavbarPortfolio()">
 						Portfolio <i class="fa fa-caret-down"></i>
 					</button>
 					<div id="clickNavbarPortfolio" class="w3-dropdown-content w3-bar-block w3-dark-grey">
@@ -229,7 +256,7 @@
 				</div>
 
 				<div class="w3-dropdown-click w3-mobile">
-					<button class="w3-button w3-border-right" onclick="clickNavbarGallery()">
+					<button class="w3-button w3-border-right w3-hide-small" onclick="clickNavbarGallery()">
 						Gallery <i class="fa fa-caret-down"></i>
 					</button>
 
@@ -310,6 +337,20 @@
 					</div>
 				</div>
 			</div>
+			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-blue"
+				onclick="NavbarCollapse()">&#9776;</a>
+		</div>
+
+		<div id="NavBar"
+			class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium w3-dropdown-click w3-mobile">
+			<button class="w3-button w3-border-right" onclick="clickNavbarPortfolio()">
+				Portfolio <i class="fa fa-caret-down"></i>
+			</button>
+
+			<button class="w3-button w3-border-right" onclick="clickNavbarGallery()">
+				Gallery <i class="fa fa-caret-down"></i>
+			</button>
+
 		</div>
 	</div>
 	<br>
@@ -321,6 +362,13 @@
 		<button class="w3-center" id="dark-mode-toggle">Toggle Dark Mode</button>
 	</div>
 
+	<p>
+		Portfolio - This is a selection of 6 photos for each of the following catergories: Cosplay, Studio, Wedding,
+		Edited and Monochrome.<br>
+		<br>
+		Gallery - This is all the photos I took at each event. These photos exist on social media platforms but not all
+		photos exisit on the 1 platform.
+	</p>
 	<div class="w3-row-padding w3-center">
 
 		<div class="w3-container w3-quarter w3-hover-black w3-hover-text-light-blue">
@@ -345,14 +393,25 @@
 		</div>
 		<div class="w3-container w3-quarter w3-hover-black w3-hover-text-light-blue">
 			<a href="javascript:void(0)" onclick="openImg('Stats');">
-				<p>Statistics</p>
+				<p>F.A.Q</p>
 				<hr>
 			</a>
 		</div>
 
 	</div>
 
-	<!-- Stats END -->
+	<!-- Stats START-->
+	<div id="Stats" class="picture" style="display:none">
+		<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+			<h3>--Gear--</h3>
+		</header>
+
+		Nikon D5000 - https://en.wikipedia.org/wiki/Nikon_D5000
+
+	</div>
+	<!-- Reviews END-->
+
+	<!-- NavBar END -->
 
 
 
@@ -1909,7 +1968,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -1920,7 +1979,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -1931,7 +1990,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -1944,7 +2003,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -1955,7 +2014,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -1966,7 +2025,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -1979,7 +2038,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -1990,7 +2049,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2001,7 +2060,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2014,7 +2073,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2025,7 +2084,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2036,7 +2095,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2049,7 +2108,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2060,7 +2119,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2071,7 +2130,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2084,7 +2143,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2095,7 +2154,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2106,7 +2165,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2119,7 +2178,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2130,7 +2189,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2141,7 +2200,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2154,7 +2213,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2179,7 +2238,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2190,7 +2249,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2201,7 +2260,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2214,7 +2273,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2225,7 +2284,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2236,7 +2295,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2249,7 +2308,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2260,7 +2319,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -2271,7 +2330,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Kelly Kyuubi Venn; </h5>
 						</div>
 					</div>
 				</div>
@@ -16876,7 +16935,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Team Fortress 2; </h5>
 						</div>
 					</div>
 				</div>
@@ -17063,7 +17122,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Rage Darling; </h5>
 						</div>
 					</div>
 				</div>
@@ -17087,7 +17146,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>overwatch; </h5>
 						</div>
 					</div>
 				</div>
@@ -17098,7 +17157,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Resident Evil; </h5>
 						</div>
 					</div>
 				</div>
@@ -17111,7 +17170,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>overwatch </h5>
 						</div>
 					</div>
 				</div>
@@ -17122,7 +17181,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Team Fortress 2; </h5>
 						</div>
 					</div>
 				</div>
@@ -17133,7 +17192,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Warhammer; </h5>
 						</div>
 					</div>
 				</div>
@@ -17146,7 +17205,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Cyberpunk; </h5>
 						</div>
 					</div>
 				</div>
@@ -17157,7 +17216,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Rage Darling; </h5>
 						</div>
 					</div>
 				</div>
@@ -17191,7 +17250,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>overwatch </h5>
 						</div>
 					</div>
 				</div>
@@ -17202,7 +17261,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>Red Faction; </h5>
 						</div>
 					</div>
 				</div>
@@ -17213,7 +17272,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>PUBG; </h5>
 						</div>
 					</div>
 				</div>
@@ -17296,7 +17355,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>World of Warcraft </h5>
 						</div>
 					</div>
 				</div>
@@ -17447,7 +17506,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>overwatch; </h5>
 						</div>
 					</div>
 				</div>
@@ -19236,9 +19295,11 @@
 
 			<!-- OTHER-Gamescom - 2024.08 START -->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
-				<h3 id="20240622">--2024.08: Gamescom--</h3>
+				<h3 id="202408">--2024.08: Gamescom--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#202408">[2024.08]</a>
+				<a href="#20240810">[2024.08.10]</a>
 				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
@@ -19246,6 +19307,7 @@
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -19292,11 +19354,13 @@
 			</div>
 			<!-- OTHER-Gamescom - 2024.08 END -->
 
-			<!-- OTHER-NightsAtKendals RE4R-Ada Wong - 2024.06.22 START -->
+			<!-- OTHER-Vutber Expo - 2024.08.10 START -->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
-				<h3 id="20240622">--2024.06.22: NightsAtKendals, RE4R-Ada Wong--</h3>
+				<h3 id="20240810">--2024.08.10: Vutber Expo--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#202408">[2024.08]</a>
+				<a href="#20240810">[2024.08.10]</a>
 				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
@@ -19304,6 +19368,7 @@
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -19317,8 +19382,8 @@
 			<div class="w3-row-padding w3-margin-top">
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="file:///C:/Windows/Web/Screen/img100.jpg" onclick="onClick(this)" loading="lazy"
-							class="w3-image w3-hover-opacity">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIRwNRmiU_0LV0YQsw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
 							<h5>; </h5>
@@ -19328,8 +19393,8 @@
 
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="file:///C:/Windows/Web/Screen/img100.jpg" onclick="onClick(this)" loading="lazy"
-							class="w3-image w3-hover-opacity">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIRvWV4Q5H273g1U0w?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
 							<h5>; </h5>
@@ -19339,8 +19404,8 @@
 
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="file:///C:/Windows/Web/Screen/img100.jpg" onclick="onClick(this)" loading="lazy"
-							class="w3-image w3-hover-opacity">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIRsn1dGPJvPCgc5Tg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
 							<h5>; </h5>
@@ -19348,6 +19413,345 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIRu8bG62jx1EiX-vQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Metal Gear Solid; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIRpKyZucGe8JYVaMA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIRtj43YgzwXQfTz4Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIRqIvzJRMX8dSSMNg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIRrwPpV3xf5E3jH1w?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<!-- EMPTY -->
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- OTHER-Vutber Expo - 2024.08.10 END -->
+
+			<!-- OTHER-NightsAtKendals RE4R-Ada Wong - 2024.06.22 START -->
+			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+				<h3 id="20240622">--2024.06.22: NightsAtKendals, RE4R-Ada Wong--</h3>
+
+				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
+				<a href="#202304">[2023.04]</a>
+				<a href="#20220806">[2022.08.06]</a>
+				<a href="#20220507">[2022.05.07]</a>
+				<a href="#20220423">[2022.04.23]</a>
+				<a href="#201910">[2019.10]</a>
+				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
+				<a href="#20190414">[2019.04.14]</a>
+				<a href="#20181227">[2018.12.27]</a>
+				<a href="#20180908">[2018.09.08]</a>
+				<a href="#20180811">[2018.08.11]</a>
+				<a href="#20180428">[2018.04.28]</a>
+				<a href="#20170409">[2017.04.09]</a>
+				<a href="#20170114">[2017.01.14]</a>
+
+			</header>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_twB0PnDEQWW2iO7g?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_txmk2L3sJWanj09Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_wAPFrYOPXahS5uTw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t_rHZ8ofgHis1nWg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_wDFln2mYe434WcTA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_wBsBJy97-PlwHHzw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t19MdNF8xMqlI7lA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_tzi4-e9D338g3VTQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t669JEyPzvXmSHMw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_tymHAPKvW2brTRBQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t0aXGc7ooIgNK0HQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t2G8kABvpBxc7LmQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t9rUi-iLb6ut2-Iw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t431de8zZ6bXJwcA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t7Le9heF1nd9Rnbg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t5QgtD1Iiqn1mu7Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t3D6VGiTuEdgtMXA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t8m6MsD5GL2gN_0A?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_wC_eDWvlCWuq9Vew?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t-tOIKH3SE1-sZzg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg_t-tOIKH3SE1-sZzg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>NightsatKendalls, Resident Evil, Ada Wong;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<!-- OTHER-NightsAtKendals RE4R-Ada Wong - 2024.06.22 END -->
 
 
@@ -19356,13 +19760,14 @@
 				<h3 id="202304">--2023.04: Star Wars Celebration--</h3>
 
 				<a href="#TOP">[TOP]</a>
-
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -20000,12 +20405,14 @@
 				<h3 id="20220806">--2022.08.06: Comic Con Wales--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -20438,12 +20845,14 @@
 				<h3 id="20220507">--2022.05.07: Meredith Wedding--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -20771,12 +21180,14 @@
 				<h3 id="20220423">--2022.04.23: Lady Venom Meetup--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -20899,12 +21310,14 @@
 				<h3 id="201910">--2019.10: Destination Star Trek--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -21512,12 +21925,14 @@
 				<h3 id="20191019">--2019.10.19: EGX--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -21965,17 +22380,360 @@
 
 			<!-- OTHER-EGX 2019.10.19 END -->
 
-			<!-- OTHER-Chloe Anne 2019.04.14 START -->
+			<!-- OTHER-LadyVemonCardiff 2019.10.12 START -->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
-				<h3 id="20190414">--2019.04.14: Chloe Anne--</h3>
+				<h3 id="20191012">--2019.10.12: Lady Vemon Cardiff--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
+				<a href="#20190414">[2019.04.14]</a>
+				<a href="#20181227">[2018.12.27]</a>
+				<a href="#20180908">[2018.09.08]</a>
+				<a href="#20180811">[2018.08.11]</a>
+				<a href="#20180428">[2018.04.28]</a>
+				<a href="#20170409">[2017.04.09]</a>
+				<a href="#20170114">[2017.01.14]</a>
+
+			</header>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VVuwibtQVz45WuXw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VTGsWTEujIAuFDiw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VN3NSdoNMqp_cqjA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VFgeRX2PPByfF79Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7U_-30RG7C2wT6mxw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7U4DV6InKefQyn5Pg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VRb6nFOzKbpog8yQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VUGMpLQQmGt8a0Gw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VS0Ij2eAula2Z7xQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VOV2EDjUi2Ce01hA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VM5Am-euk2c77J8g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VLHvx1zxLEJ394NQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VIAMn-l086wPoFzw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VK_0zG2M3XjOqmsw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VHmkeN1wYpVmtidw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VEFQsADVfv09kEEg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VGKdxkCMUFj1I7cg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VDOkTF1BRKJl-_hQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VJr7mDZpmhN2ysJA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VBLwimAC4MSqdkZQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7U-d_45X2cMj1IsnA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VAV74DJEiYCIG9Eg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7VC5P0aFzQ59zUsaA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7U9m3HVmM4-NCV5BA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7U8c1saz0RmHszN3Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7U7nMJiV1c9we9fdQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg7U7nMJiV1c9we9fdQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Lady Vemon;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- OTHER-LadyVemonCardiff 2019.10.12 END -->
+
+
+			<!-- OTHER-Chloe Anne 2019.04.14 START -->
+			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+				<h3 id="20190414">--2019.04.14: Chloe Anne--</h3>
+
+				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
+				<a href="#202304">[2023.04]</a>
+				<a href="#20220806">[2022.08.06]</a>
+				<a href="#20220507">[2022.05.07]</a>
+				<a href="#20220423">[2022.04.23]</a>
+				<a href="#201910">[2019.10]</a>
+				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -22338,12 +23096,14 @@
 				<h3 id="20181227">--2018.12.27: Ashleigh Jay--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -22461,12 +23221,14 @@
 				<h3 id="20180908">--2018.09.08: Rapture Gaming Festival--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -22894,12 +23656,14 @@
 				<h3 id="20180811">--2018.08.11: Newport Comic and Gaming Con--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -23157,12 +23921,14 @@
 				<h3 id="20180428">--2018.04.28: Georgia Brittain--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -23450,12 +24216,14 @@
 				<h3 id="20170409">--2017.04.09: Doctor Who--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -23672,12 +24440,14 @@
 				<h3 id="20170114">--2017.01.14: GeekICons--</h3>
 
 				<a href="#TOP">[TOP]</a>
+				<a href="#20240622">[2024.06.22]</a>
 				<a href="#202304">[2023.04]</a>
 				<a href="#20220806">[2022.08.06]</a>
 				<a href="#20220507">[2022.05.07]</a>
 				<a href="#20220423">[2022.04.23]</a>
 				<a href="#201910">[2019.10]</a>
 				<a href="#20191019">[2019.10.19]</a>
+				<a href="#20191012">[2019.10.12]</a>
 				<a href="#20190414">[2019.04.14]</a>
 				<a href="#20181227">[2018.12.27]</a>
 				<a href="#20180908">[2018.09.08]</a>
@@ -25326,7 +26096,7 @@
 		<!-- MCM Comic Con START -->
 		<div id="MCM" class="picture" style="display:none">
 
-			<!-- MCM Comic Con Birmingham - 2022 11 November -->
+			<!-- MCM Comic Con Birmingham - 2022 11 November START-->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 				<h3 id="MCMBRUM202211">--2022.11: MCM Comic Con Birmingham--</h3>
 
@@ -25349,7 +26119,43 @@
 
 			</header>
 
-			<!-- MCM Comic Con London - 2022 10 October -->
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="file:///C:/Windows/Web/Screen/img100.jpg" onclick="onClick(this)" loading="lazy"
+							class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="file:///C:/Windows/Web/Screen/img100.jpg" onclick="onClick(this)" loading="lazy"
+							class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="file:///C:/Windows/Web/Screen/img100.jpg" onclick="onClick(this)" loading="lazy"
+							class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- MCM Comic Con Birmingham - 2022 11 November END-->
+
+			<!-- MCM Comic Con London - 2022 10 October START-->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 				<h3 id="MCMLONDON202210">--2022.10: MCM Comic Con London--</h3>
 
@@ -25372,7 +26178,9 @@
 
 			</header>
 
-			<!-- MCM Comic Con London - 2022 05 May -->
+			<!-- MCM Comic Con London - 2022 10 October END-->
+
+			<!-- MCM Comic Con London - 2022 05 May START-->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 				<h3 id="MCMLONDON202205">--2022.05: MCM Comic Con London--</h3>
 
@@ -25395,7 +26203,9 @@
 
 			</header>
 
-			<!-- MCM Comic Con London - 2019 05 May -->
+			<!-- MCM Comic Con London - 2022 05 May END-->
+
+			<!-- MCM Comic Con London - 2019 05 May START-->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 				<h3 id="MCMLONDON201905">--2019.05: MCM Comic Con London--</h3>
 
@@ -25418,7 +26228,9 @@
 
 			</header>
 
-			<!-- MCM Comic Con Birmingham - 2019 03 March -->
+			<!-- MCM Comic Con London - 2019 05 May END-->
+
+			<!-- MCM Comic Con Birmingham - 2019 03 March START-->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 				<h3 id="MCMBRUM201903">--2019.03: MCM Comic Con Birmingham--</h3>
 
@@ -25441,7 +26253,9 @@
 
 			</header>
 
-			<!-- MCM Comic Con London - 2018 10 October -->
+			<!-- MCM Comic Con Birmingham - 2019 03 March END-->
+
+			<!-- MCM Comic Con London - 2018 10 October START-->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 				<h3 id="MCMLONDON201810">--2018.10: MCM Comic Con London--</h3>
 
@@ -25464,7 +26278,9 @@
 
 			</header>
 
-			<!-- MCM Comic Con London - 2018 05 May -->
+			<!-- MCM Comic Con London - 2018 10 October END-->
+
+			<!-- MCM Comic Con London - 2018 05 May START-->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 				<h3 id="MCMLONDON201805">--2018.05: MCM Comic Con London--</h3>
 
@@ -25558,7 +26374,7 @@
 
 			<!-- MCM Comic Con London - 2016 05 May -->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
-				<h3 id="MCMLONDON201605">--2016.10: MCM Comic Con London--</h3>
+				<h3 id="MCMLONDON201605">--2016.05: MCM Comic Con London--</h3>
 
 				<a href="#TOP">[TOP]</a>
 				<a href="#MCMBRUM202211">[2022.11]</a>
@@ -25579,7 +26395,987 @@
 
 			</header>
 
-			<!-- MCM Comic Con London - 2015 10 October -->
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6oKmCYpbHzJUiWNxA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6oIVu5udUGRcvd2FQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6oLMQMuTktx5JGN-w?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6oAd0Z_elKSNdzTIw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6oBmcqXAK6WwnujHA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6oG_yh5X-BGYzi5DA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6oFDM2Eq02T78S53g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6l_dOhZnO3bMy2prg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6l6NXuvTvd16dxKqw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6l46JnzQDokiOHjWw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6l5y5w2STbx_GetSw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6l3T3wQWyG6E6q4sw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lvsQAzOTL-arMSFg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lujnfepWN_Fv08nQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lpABpsof7-Dzd0-Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lolpEiZyE8yuWedg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lhLdS6vm1HGvL3YA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6ljmnO0yLZgSzbITQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6ldijRYHWRUoTtz5w?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lcIcWNQBfh5VVYsg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lXAMvhfKN4BCJ1kw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lYELHh4X9Z0U94HQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lSPPAJUTXe_lZMGA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lOHj9mmZCPEx5ang?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lUWR3KYQwf6G5-Zw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lLsYQvlV0BBjHlUQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lF_a82CBzegwrovg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lCRr5o1wZ4h92XsA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6lEU4x8i8Xtg1QA2w?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6k-nDw68VE73ZmaSw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6k9fDJ3eR6nc77Cvw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6k6BnE6c0OAje0y3A?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6k_eFiM3dQT4TDhBg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6k0oPHq-iEtNI0VNw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6k7hoKQWmPX9SY-hQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kxNSIHermlRhbBTA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6k2CIxGzswc8mMK4g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6ks1OfmQKiEVvJ4NQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kt5m93x-0ZD3HuZA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kqZ5hF0SxJtN8fLg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kks6kt1ymt0RnpBQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kmUE3s9GbWlJIFpw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kl32kAHv53VNehcg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6krydM1U35QDUcX5w?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kf_cUlLNLnWytqoA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kiQmAt7Gp0emSFaA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kg7NjXK4CBfLYyPA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kdNhhOHqemCkMi9w?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6keWgc093I4wOGlGw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kaqfrCSh0waxiRGA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kXU21hfGo4d5b5sw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kcLKm8Qc240tCptg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kUzMtrxJGoL4GNhA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kN8Ev2ilOeRVL9qQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kN8Ev2ilOeRVL9qQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kO7-z0gGdTlADYHQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kHxgJ6EGLdo0iuIA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kEezdz0IXKtG3uMw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kFuXR7nPxKbEK2sQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6h_jS4_z0yOJV1akg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kGYmdJJ3QcsyoP9Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kDhr6MOhfwcfAZZg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6kCwki5PxHSsPJ5aQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6h8wYMnCG0PNPYPjw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6h7EPZHy7bxjwxa3A?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6h55vOBae8m8ea8sw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6h15nsuAGn7eFh1Zg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hr8e67smEOks3KPQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hvVsapmHoL_DAoEA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6htGIJx0P6C7q25wA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hz29XMJ6P6jEWtAA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hqunCzWFnhQqTACA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hslPMlSdccxvD6mw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hopADcPwrb_kYF2Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hkgmu828p7tK_G-g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hhrvTsSBMJaqDBPg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hiEWZrG3vdLNKEQA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hml1AO1XL8r_xKzA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hliTKG2KGKgv0Vsg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hpAAtnWxnXbG382w?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hgVhhk5PhWnZFqOQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hd14o1oqed_ifkNQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6ha0f-XIGSwL29eQw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6hbBuYEDY21rvJtBA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- MCM Comic Con London - 2015 10 October START-->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 				<h3 id="MCMLONDON201510">--2015.10: MCM Comic Con London--</h3>
 
@@ -30558,7 +32354,630 @@
 		<!-- FYF START -->
 		<div id="FYF" class="picture" style="display:none">
 
-			<!--2018.04.00 - Fuel Your Fire START -->
+			<!--2018.08.30 - Fuel Your Fire START -->
+			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+				<h3 id="20180830">--2018.08.30 - Fuel Your Fire--</h3>
+
+				<a href="#TOP">[TOP]</a>
+
+			</header>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IwUkQ6ejFqR7ls5Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Iz1sFyhX9F4ABsXA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IxUTsnEfAfHKBgmg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IuiyTjoV4Pe0LR2A?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IrsaAyCTaYPdT5WQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IpxWECsH6TCUcU9A?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6ItpibATp8aJ5nPGA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Is3P_GQ4dyG1LH8A?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Io0TuEdpBGWfrkIQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Iq7WkK5A_FqJdGpw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IhYe46nyBAdfk-Mg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Ii0tpRUd4Gv6HxPg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IldCZk7Jcz0LYysg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IkWwNClkAGzKHU1Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6InIA8GNzVInozDeA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IjXYT4cOda5bSspA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IfWv2GJi1FnuAhqw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Ig1frCGgvOS5d_pA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IcP9SnwlCIDQnt_g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IYLpkUlfkL1Ipu6Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IYLpkUlfkL1Ipu6Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--2018.08.30 - Fuel Your Fire END -->
+
+			<!--2018.08.19 - Fuel Your Fire START -->
+			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+				<h3 id="20180819">--2018.08.19 - Fuel Your Fire--</h3>
+
+				<a href="#TOP">[TOP]</a>
+
+			</header>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IXgPqWbaTYyAzc8A?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IdtQeKtjAuBeM9yg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IW1Fm_LEEWHAPI3A?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IZOyZiw6Ri8ZPW-Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6ITZNUS3s-1mCnQhg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IMhnFVBYKWrTq6FA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6ILJ7AfUfs6YFZOSA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6ILJ7AfUfs6YFZOSA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6ILJ7AfUfs6YFZOSA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Ie1IPErVrk_qzFjQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IUCIEMWAHk5stqXQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IQJUZj7POny_Bu0A?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IVNBYMNpwwKpvm4Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IRXrFhnLPxrQwhzw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IS63qvamVMfWHiuQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IPXHfJ_BJ1GxEttA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IOHgs4mGSFPTsb7w?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IND5_OBbGFNg-ncA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IIlqyo0nTZk1MmMw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IHeIpZxyvhXUU51Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IHeIpZxyvhXUU51Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--2018.08.19 - Fuel Your Fire END -->
+
+			<!--2018.06.24 - Fuel Your Fire START -->
+			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+				<h3 id="20180624">--2018.06.24 - Fuel Your Fire--</h3>
+
+				<a href="#TOP">[TOP]</a>
+
+			</header>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IJ_UrF0ceeOBi1wQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IKbnGR83p8yupmhw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IG5zcWdjnN4D1yJQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IDA-LS-bxtF-JRKA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IFgDFJ4jljxEQGrg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IFgDFJ4jljxEQGrg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IAfokLTP3fMlPZLQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IAfokLTP3fMlPZLQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6IAfokLTP3fMlPZLQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--2018.06.24 - Fuel Your Fire END -->
+
+			<!--2018.04.29 - Fuel Your Fire START -->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 				<h3 id="20180429">--2018.04.29 - Fuel Your Fire--</h3>
 
@@ -30650,7 +33069,7 @@
 
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153500&authkey=%21ACG0ZwnsyFItKJw&height=1024"
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6F7yDSMULBykm7yvg?embed=1&height=1024"
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
@@ -30661,7 +33080,7 @@
 
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153500&authkey=%21ACG0ZwnsyFItKJw&height=1024"
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Fz8Q23C5xZDFpdWw?embed=1&height=1024"
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
@@ -30671,7 +33090,323 @@
 				</div>
 			</div>
 
-			<!--2018.04.00 - Fuel Your Fire END -->
+
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FyXJRrBlOYZMrtqw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FvycYtxMYuQByLYQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6F3jtepekQ2p7sNUQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Ft06yvVgPs8BkOtQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FsOHdIU2QgKpDTjw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Fl6bwgn5ex1WQvxQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FnwSVfT11iFoovyA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FqHzjUr0ezblvGBg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Fj9z3dHkk0ZF-x6A?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Fk5A2gx_HWUimFfw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FiHBxDPfpzIrtwlA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FiHBxDPfpzIrtwlA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6F-rUmImoeezKnELg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6F6FTwFpUlfTrlDiA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6F4UYz3pcuN5Gm0RQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6F0DDci-XhHOHRJrA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6F2aQroFYaDZ98GYg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6F1TMJDFhgMGD1j5A?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FxWVzQfLuV0U7Szw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FwqAMucOGLdpOmfA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FuhMzqBtF_R0Sdgg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FrfepxuhkPxSBBnQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Fo3mvXH4sp6F8XqQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Fp_145SzFx_3r4Jw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Fm6y0nZu6EIaiQoA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Fg0N-wbjp_MaVe0w?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6FfzSBjLoi2HyozxQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--2018.04.29 - Fuel Your Fire END -->
 
 			<!--2018.03.25 - Fuel Your Fire START -->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
@@ -30688,7 +33423,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -30699,7 +33434,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -30710,7 +33445,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -30723,7 +33458,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -30797,7 +33532,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -30808,7 +33543,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31658,7 +34393,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31669,7 +34404,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31680,7 +34415,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31693,7 +34428,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight, Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31704,7 +34439,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31715,7 +34450,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight;</h5>
 						</div>
 					</div>
 				</div>
@@ -31728,7 +34463,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31798,7 +34533,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31809,7 +34544,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight;</h5>
 						</div>
 					</div>
 				</div>
@@ -31820,7 +34555,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight;</h5>
 						</div>
 					</div>
 				</div>
@@ -31833,7 +34568,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight;</h5>
 						</div>
 					</div>
 				</div>
@@ -31844,7 +34579,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight;</h5>
 						</div>
 					</div>
 				</div>
@@ -31855,7 +34590,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight, Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31868,7 +34603,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31879,7 +34614,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31929,7 +34664,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31942,7 +34677,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 
 					</div>
@@ -31954,7 +34689,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31965,7 +34700,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -31978,7 +34713,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 
 					</div>
@@ -31990,7 +34725,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -32001,7 +34736,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight, Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -32014,7 +34749,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight, Charlie-Jane Barber;</h5>
 						</div>
 
 					</div>
@@ -32033,12 +34768,7 @@
 
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153359&authkey=%21ABGOrL4nXsbnpJY&width=1024"
-							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-						<div class="w3-container">
-							<!-- ImageTags -->
-							<h5>;</h5>
-						</div>
+						<!-- EMPTY -->
 					</div>
 				</div>
 			</div>
@@ -32050,7 +34780,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 
 					</div>
@@ -32062,7 +34792,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -32073,7 +34803,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -32098,7 +34828,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -32109,7 +34839,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -32122,7 +34852,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 
 					</div>
@@ -32134,7 +34864,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -32145,7 +34875,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Charlie-Jane Barber;</h5>
 						</div>
 					</div>
 				</div>
@@ -32158,7 +34888,7 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight;</h5>
 						</div>
 
 					</div>
@@ -32170,19 +34900,14 @@
 							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>;</h5>
+							<h5>Luke Blight;</h5>
 						</div>
 					</div>
 				</div>
 
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="https://onedrive.live.com/embed?resid=64C16DAC0B13CBC%2153357&authkey=%21AISxMVFw9z4bVzo&height=1024"
-							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
-						<div class="w3-container">
-							<!-- ImageTags -->
-							<h5>;</h5>
-						</div>
+						<!-- EMPTY -->
 					</div>
 				</div>
 			</div>
@@ -36402,50 +39127,1876 @@
 		<!-- GEEKFEST START -->
 		<div id="GEEKFEST" class="picture" style="display:none">
 
-			<!-- GEEKFEST START -->
+			<!-- GEEKFEST 2019.05.19 START -->
 			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
-				<h3 id="GEEKFESTxxx">--GEEKFESTxxx--</h3>
+				<h3 id="20190519">--2019.05.19--</h3>
 
 				<a href="#TOP">[TOP]</a>
-
 
 			</header>
 
 			<div class="w3-row-padding w3-margin-top">
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="C:\Windows\Web\Screen\img100.jpg" class="w3-image" style="width:100%;cursor:pointer"
-							onclick="onClick(this)" class="w3-hover-opacity">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Maj0QTSNObWa2Caw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>;</h5>
 						</div>
 					</div>
 				</div>
 
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="C:\Windows\Web\Screen\img100.jpg" class="w3-image" style="width:100%;cursor:pointer"
-							onclick="onClick(this)" class="w3-hover-opacity">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MeW742v4oaPAsodw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>;</h5>
 						</div>
 					</div>
 				</div>
 
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="C:\Windows\Web\Screen\img100.jpg" class="w3-image" style="width:100%;cursor:pointer"
-							onclick="onClick(this)" class="w3-hover-opacity">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Mc0MmBpd1j7zVX5g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
-							<h5>; </h5>
+							<h5>;</h5>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- GEEKFEST END -->
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MWuPiA2hDKJmnwkg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MUFpD8vGih2NX0hw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MTLiG7uXh4Ao8Nmg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MYtRDvgjzJ4TOJDw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MOgKo6snoY5Q-VZQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MPhh_IJJX9bnokyA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MXj4V36s3f5ImlNA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MSX76M247Jq_tXnA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MVgN-oJTqwjLuh0Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MNeXTRJFI4wkCT0g?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MRf_3OfPN3bpSu9Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MRf_3OfPN3bpSu9Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- GEEKFEST 2019.05.19 END -->
+
+			<!-- GEEKFEST 2018.06.16 START -->
+			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+				<h3 id="20180618">--2018.06.16--</h3>
+
+				<a href="#TOP">[TOP]</a>
+
+			</header>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NgVpk3v4g9yNjTFw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NePvZ5ew1Bqz9i7g?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NYVvDoPB_96R14vQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NdkvjOnkDVhtXtng?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NTIz3sEM9_HTsobg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NW31jwdSQx5l9NtA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NUhn5T-2tsoic_Qg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NSmsKtimMKnSXZaA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NM7aC4dENW8pgs-g?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NkdmWSmqQBymLfyQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NhElQtbBPOtY3htw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NcE22dL4dMmk3GPQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NaBAQMbdtrf1PLaw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NbyRh4apial2N8qg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NZRcwlGjipqXepmw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NRkMsD4_mudgO9aA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NXyTePYmOxiiNa2w?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NVJxdPQHKRTVoQ6Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NN72Yygu8xvsSHMA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NQ7gylm0SPbxROSA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NKsyw6P1Jmv9yJqg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NIv-dZhWAi7EXBJQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NPdiRGBxRHfJWcGw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NHlD8gqmt-JyjggQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- GEEKFEST 2018.06.16 END -->
+
+
+
+			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+				<h3 id="20170085">--GEEKFEST 2017.08.05--</h3>
+
+				<a href="#TOP">[TOP]</a>
+
+			</header>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MQGr60N3WfL8gtKQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MLTMTh4VueHkifGw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MMA9MzE6PrOYDxaw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MK91iDq_NiVWjoqQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MF9H0zah5YcduqcQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MEON2gFkQTKn62AQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MBAkaBDvAAiVJroA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J_VAcZPgbXuLNizA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MAb7GMqsmU2vIjjw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J7v_viPcCSY5o8Yw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J-at0TmrjHrDsCKQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J9rZY8OBYMDDPk4Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J5a95MWIHIch99Aw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J6uGxVcwCHX_8vmQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J18tFDIru55dLeyA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Jz8hsVFkvnaNeccg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J22ZDuM2Xi_OLKhA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J3GeoYTdf_48jNNA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JsHOm7DvnGLOrJxQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JrFJO6u45s4z04GA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JvPwYS8KtyiCanwQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MJB0_3cEO-6Yb8iQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MIzV4Ec-wfJobp1Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MGK-k9p5SuF8FqJA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MDhSYPXgOMuXk70A?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MH-scF-gAzWz5O8A?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MCHAWa3vUorNu56g?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J8ACfJzMyVzGz5IQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J43IoeOmSkfD9rOA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6J0bxUT-9yatiSOjA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Jwx63-MYS5W019Bw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JxkqgitT6m3Vlfiw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JxkqgitT6m3Vlfiw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- GEEKFEST 2017.08.05 END -->
+
+			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+				<h3 id="20160806">--GEEKFEST 2016.08.06--</h3>
+
+				<a href="#TOP">[TOP]</a>
+
+			</header>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JqI7SvvtyBONedDA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JmfyfVrz-tdSTp3w?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JibofLOxKWDb0KYw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Ashleigh Jay;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JfK5qoEj71WGsTPw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JcWZLgPqBfr4DPVQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JdYoTK3qjAeZrM6g?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JaDfxdLFIuDk3GhA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JXo0Phw6AUiGn1zg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JZkRPPVU0OS3a6uA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JUBuNQEVcec0v4Nw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JOvoORGFyhIBYyBQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JTI8Ek7aHEfQ47Pw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JShEUonwdaqWWDXA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Miss T Cosplay;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JR2SnvVKBxo-6zdQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JLxQFZ9DsD0grmXA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JJFpVm8MoNmMGMwQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JJFpVm8MoNmMGMwQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JJFpVm8MoNmMGMwQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JtdBrN273XYy60Pg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JpMGAsAXi3APo_zw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JyWFuSLbsKx4bpAA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Joe9eDu_Ax1rbPKw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JlBQbqX4kndAonAw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JhKo79XqbYfcnp7Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JnfD47e_bSZTa-4g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JgeGKuaT6AoqFFUg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JjZUAltsf_dVfx8Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Je25DAmlw2WGb68Q?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JYOrV0P1rwbSiUVw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JV_xTUkisxNGdTNQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JW5uUUkFUpMMRKCQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JN-mUjHMuq1EWs7g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JP94IALDoFUKI9dg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Miss T Cosplay;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JM_8klBldmfAotkQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JM_8klBldmfAotkQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6JM_8klBldmfAotkQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- GEEKFEST 2016.08.06 END -->
+
+			<!-- GEEKFEST 2016.05.14 START -->
+			<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+				<h3 id="20160514">--GEEKFEST 2016.05.14--</h3>
+
+				<a href="#TOP">[TOP]</a>
+
+			</header>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NLDWXuAaYfDV8txQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NJnuyrYMY2pXkm4Q?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NGgn5R2Lilcu3zNw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M_wMhMvQQz0n8ndw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M9T2LXcMQ7F_Rqlw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M5cQ3OIf_bRICpcA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Mu8bfp0QkwQGJ6LA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MxVxwuybp1-wf5Gg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MwdcWg1QmXB8X6Nw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6My_3VWEs3b2uvSRw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MnG8T-iO0AXzSfyQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MrlqUgkVYbp8A9Iw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MqQftv2NTg12cqdw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MpPiS_JTb1zDAPuA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MjgInuPoxRKOM_xw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MhneqpNgQoA-WdLA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MgBSSVSnbwtrDXrg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MdCdEkeFCQf3gtEw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MZ7er2SelGrVtStA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Mb2_VPjwVO4wzrqA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Mb2_VPjwVO4wzrqA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NFFitzsq1DJqD4OQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NDFl0V-D8jAh2OPg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NCXMoLPJCPV_us2w?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NBdTSystn_N-hkkg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NEVqlRP8U9dqWXlQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6NAoemJ45WDWSfVYg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M-87aZY-3w2r_fyg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M68PGkuVP4QB_Vzg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M8TammxYM0p9KrZA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M7hmEryGljwO9ZvA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M3eZtYNGSVf8W7Aw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M4vLU1ksrTP5_kuQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M2A6C3IqqVG0ON7g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MzubARdFE0WBT-Hw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M1GBPgh1BVR6_VFA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6M08INivg86pRw4og?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MvssMZNT92cKoGAA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MtdvQ3hFWRua3m5g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Ms5hjwPCs5bulPHA?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MmNiU36d74zzoHlQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MoUhrBWdxHaKbWrQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6Ml-gpjtXgbBDRrMQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MiN4lm6ShHf5_Wqg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MkrV28KKMUPJDQyg?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MfB-OaxgG6a9OJyQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MfB-OaxgG6a9OJyQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGg6MfB-OaxgG6a9OJyQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>;</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- GEEKFEST 2016.05.14 END -->
+
+
 		</div>
 		<!-- GEEKFEST END -->
 
@@ -36566,8 +41117,19 @@
 			<div class="w3-row-padding w3-margin-top">
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="C:\Windows\Web\Screen\img100.jpg" class="w3-image" style="width:100%;cursor:pointer"
-							onclick="onClick(this)" class="w3-hover-opacity">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIRykv6TmNNaoDfz2g?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Jman; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR4xuK06nDDv3SYXQ?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
 							<h5>; </h5>
@@ -36577,19 +41139,8 @@
 
 				<div class="w3-third">
 					<div class="w3-card">
-						<img src="C:\Windows\Web\Screen\img100.jpg" class="w3-image" style="width:100%;cursor:pointer"
-							onclick="onClick(this)" class="w3-hover-opacity">
-						<div class="w3-container">
-							<!-- ImageTags -->
-							<h5>; </h5>
-						</div>
-					</div>
-				</div>
-
-				<div class="w3-third">
-					<div class="w3-card">
-						<img src="C:\Windows\Web\Screen\img100.jpg" class="w3-image" style="width:100%;cursor:pointer"
-							onclick="onClick(this)" class="w3-hover-opacity">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR1x2KADq1aST_fcw?embed=1&height=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
 						<div class="w3-container">
 							<!-- ImageTags -->
 							<h5>; </h5>
@@ -36597,6 +41148,137 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR2c_5uEmrZ-LEixg?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR3eHS0kSOjcrAA2g?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Jman; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR6TVfMfp8thADAzQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIRzQdMw9LfbPT8olQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR05vsxho_S0TNaHA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR5unmKfxe8tTQrHA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Jman; </h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR8homCry0xLhN4hQ?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Jman; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR7hNqSYkpFd9AHkA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Jman; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR-km_ZB_io9C9dPA?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Jman; </h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="https://1drv.ms/i/s!Arw8scDaFkwGhIR9tUq_WdiRX4Dlhw?embed=1&width=1024"
+							onclick="onClick(this)" loading="lazy" class="w3-image w3-hover-opacity">
+						<div class="w3-container">
+							<!-- ImageTags -->
+							<h5>Jman; </h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<!-- EMPTY -->
+					</div>
+				</div>
+
+				<div class="w3-third">
+					<div class="w3-card">
+						<!-- EMPTY -->
+					</div>
+				</div>
+			</div>
+
 			<!-- 2024.06.09-UKCGF END -->
 
 			<!-- 2023.03.16-UKCGF START -->
@@ -38643,17 +43325,6 @@
 		<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
 			<h3>
 
-				<a href="https://filmandcomicconcardiff.com/" target="_blank">[2024.10 - Cardiff Film and Comic
-					Con]</a><br>
-				<a href="https://www.mcmcomiccon.com/london/en-us/home.html" target="_blank">[2024.10 - MCM Comic Con
-					London]</a><br>
-
-			</h3>
-		</header>
-
-		<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
-			<h3>
-
 				<a href="https://www.mcmcomiccon.com/birmingham/en-us/home.html" target="_blank">[2024.11 - MCM Comic
 					Con Birmingham]</a><br>
 
@@ -38677,6 +43348,16 @@
 			</h3>
 		</header>
 
+		<header class="w3-container w3-topbar w3-bottombar w3-border-white w3-blue">
+			<h3>
+
+				<a href="https://www.mcmcomiccon.com/london/en-us/home.html" target="_blank">[2025.05 - MCM Comic Con
+					London]</a><br>
+				<a href="https://www.twitchcon.com/rotterdam-2025/" target="_blank">[2025.05 - TwitchCon Europe]</a><br>
+
+			</h3>
+		</header>
+
 	</div>
 	<!-- FutureEvents END -->
 
@@ -38688,13 +43369,15 @@
 				[2024]
 			</h3>
 			<h3>
+				2024.10 - MCM Comic Con, London <br>
+				2024.10 - Film & Comic Con, Cardiff <br>
 				2024.08 - Gamescom, Germany <br>
 				2024.08 - Vtuber Expo, Birmingham <br>
 				2024.06 - UKCGF, Cardiff <br>
-				2024.05 - MCM Comic Con London <br>
+				2024.05 - MCM Comic Con, London <br>
 				2024.03 - Insomnia Gaming Festival i72 <br>
 				2024.03 - UKCGF, Bristol <br>
-				2024.01 - MegaconLive London <br>
+				2024.01 - MegaconLive, London <br>
 			</h3>
 		</header>
 
@@ -39234,6 +43917,17 @@
 		}
 		// <!-- Clickable Navbar Portfolio:End -->
 
+		// <!-- NavbarCollapse:Start -->
+		function NavbarCollapse() {
+			var x = document.getElementById("NavBar");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else {
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		// <!-- NavbarCollapse:End -->
+
 	</script>
 
 
@@ -39243,7 +43937,7 @@
 
 	<footer class="w3-display-container w3-content w3-center responsive">
 		<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
-				class="w3-hover-text-green">w3.css</a></p>
+				class="w3-hover-black w3-hover-text-light-blue">w3.css</a></p>
 
 	</footer>
 </body>

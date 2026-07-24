@@ -1,5 +1,18 @@
 {
-    "menu.spotlight": "Spotlight",
+    "theme": "Design",
+    "theme.default": "Standard",
+    "theme.os": "Systemdesign",
+    "theme.dark": "Dunkel",
+    "theme.light": "Hell",
+    "theme.contrast": "Hoher Kontrast",
+
+    "language": "Sprache",
+
+    "menu.spotlight": "Highlights",
     "menu.gallery": "Galerie",
-    "menu.search": "Suche"
+    "menu.search": "Suche",
+    "menu.reviews": "Bewertungen",
+
+    "button.top": "Nach oben",
+    "button.backToAlbums": "Zurück zu den Alben"
 }

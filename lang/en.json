@@ -1,0 +1,18 @@
+{
+    "theme": "Theme",
+    "theme.default": "Default",
+    "theme.os": "OS Theme",
+    "theme.dark": "Dark",
+    "theme.light": "Light",
+    "theme.contrast": "High Contrast",
+
+    "language": "Language",
+
+    "menu.spotlight": "Spotlight",
+    "menu.gallery": "Gallery",
+    "menu.search": "Search",
+    "menu.reviews": "Reviews",
+
+    "button.top": "Top",
+    "button.backToAlbums": "Back to Albums"
+}

@@ -1120,7 +1120,7 @@
         const reviewsData = [
             {
                 name: "--Paris-Nord Villepinte Exhibition Center--",
-                role: "Venue",
+                role: "venue",
                 text: "...",
                 rating: 5,
 
@@ -1129,7 +1129,7 @@
 
             {
                 name: "--Japan Expo Paris--",
-                role: "Event",
+                role: "event",
                 text: "...",
                 rating: 5,
 
@@ -1138,8 +1138,8 @@
 
             {
                 name: "--ExCel London--",
-                role: "Venue",
-                text: "ExCel London is located in East London and is connected via several public transport links. There is the London City Airport close by and the Elizibeth line train at Custom House for Excel. I travel from Wales so that means that my London Terminus is Paddigton. I then get the underground and then change for the DLR. not a diffuclt journy but could take anywere from 60 to 90 minutes. That changed with the Elizibeth Line. I still get on at Paddington but its now about 25 minutes and no need to change to get to Custom House for Excel.",
+                role: "venue",
+                text: "review.--ExCel London--",
                 rating: 5,
 
                 tags: ["MCM | MCM London", "egx", "RTX", "Star Wars Celebration", "megacon london"]
@@ -1147,8 +1147,8 @@
 
             {
                 name: "--National Exhibition Centre (NEC) Birmingham--",
-                role: "Venue",
-                text: "The National Exhibition Centre (NEC) is hub. This hub consisits of the NEC, hotels, airport and national express.",
+                role: "venue",
+                text: "review.--National Exhibition Centre (NEC) Birmingham--",
                 rating: 5,
 
                 tags: ["megacon | megacon birmingham", "MCM | MCM Birmingham", "Insomina Gaming Festival", "vexpo", "Destination Star Trek"]
@@ -1156,7 +1156,7 @@
 
             {
                 name: "--Cardiff International Arena--",
-                role: "Venue",
+                role: "venue",
                 text: "...",
                 rating: 5,
 
@@ -1165,7 +1165,7 @@
 
             {
                 name: "--Insomnia Gaming Festival--",
-                role: "Event",
+                role: "event",
                 text: "This event is split into 2 parts. you have the convention side, which is your typical convention but with more of a gaming focus, then you have the LAN side. The LAN offers a space that is open from 6PM Friday to 6PM Sunday - a full 72 hours. There are also facilties that are open for LAN",
                 rating: 5,
 
@@ -1174,7 +1174,7 @@
 
             {
                 name: "--Cosxpo--",
-                role: "Event",
+                role: "event",
                 text: "...",
                 rating: 5,
 
@@ -1183,7 +1183,7 @@
 
             {
                 name: "--Bewt Studios--",
-                role: "Venue",
+                role: "venue",
                 text: "...",
                 rating: 5,
 
@@ -1192,7 +1192,7 @@
 
             {
                 name: "--Gamescom--",
-                role: "Event",
+                role: "event",
                 text: "...",
                 rating: 5,
 
@@ -1201,7 +1201,7 @@
 
             {
                 name: "--Fuel Your Fire--",
-                role: "Event",
+                role: "event",
                 text: "...",
                 rating: 5,
 
@@ -1210,7 +1210,7 @@
 
             {
                 name: "--Optimus--",
-                role: "Event",
+                role: "event",
                 text: "...",
                 rating: 5,
 
@@ -1219,7 +1219,7 @@
 
             {
                 name: "--MCM London--",
-                role: "Event",
+                role: "event",
                 text: "...",
                 rating: 5,
 
@@ -1228,7 +1228,7 @@
 
             {
                 name: "--MCM Birmingham--",
-                role: "Event",
+                role: "event",
                 text: "...",
                 rating: 5,
 
@@ -1237,7 +1237,7 @@
 
             {
                 name: "--RTX--",
-                role: "Event",
+                role: "event",
                 text: "...",
                 rating: 5,
 
@@ -1246,7 +1246,7 @@
 
             {
                 name: "--Twitch Con Europe--",
-                role: "Event",
+                role: "event",
                 text: "...",
                 rating: 5,
 
@@ -1255,7 +1255,7 @@
 
             {
                 name: "--Vexpo--",
-                role: "Event",
+                role: "event",
                 text: "...",
                 rating: 5,
 
@@ -9058,7 +9058,7 @@
             section.className = "portfolio-section active";
 
             const title = document.createElement('h2');
-            title.textContent = "Reviews";
+            title.textContent = translations["menu.reviews"] || "Reviews";
             section.appendChild(title);
 
             const grid = document.createElement('div');
@@ -9123,12 +9123,19 @@
                     return `<span class="review-tag">${tag}</span>`;
                 }).join(" ");
 
+                const translatedRole =
+                    translations[`role.${review.role}`] || review.role;
+
+                const translatedText =
+                    translations[review.text] || review.text;
+
                 card.innerHTML = `
-            <strong>${review.name}</strong><br>
-            <small>${review.role}</small>
-            <p>${review.text}</p>
-            <div>${stars}</div>
-        `;
+    <strong>${review.name}</strong><br>
+    <small>${translatedRole}</small>
+    <p>${translatedText}</p>
+    <div>${stars}</div>
+`;
+
 
                 card.appendChild(strip);
 

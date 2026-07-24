@@ -14,5 +14,11 @@
     "menu.reviews": "Bewertungen",
 
     "button.top": "Nach oben",
-    "button.backToAlbums": "Zurück zu den Alben"
+    "button.backToAlbums": "Zurück zu den Alben",
+
+    "role.venue": "Veranstaltungsort",
+    "role.event": "Veranstaltung",
+
+    "review.ExCel London": "ExCeL London befindet sich im Osten Londons und ist über mehrere öffentliche Verkehrsmittel erreichbar. Der London City Airport befindet sich in der Nähe und die Elizabeth Line fährt bis Custom House für ExCeL. Ich reise aus Wales an, daher ist mein Londoner Endbahnhof Paddington. Danach fahre ich mit der U-Bahn und steige in die DLR um. Die Reise ist nicht schwierig, kann aber zwischen 60 und 90 Minuten dauern. Das hat sich mit der Elizabeth Line geändert. Ich fahre weiterhin von Paddington, aber die Fahrt dauert jetzt etwa 25 Minuten und ich muss nicht mehr umsteigen, um Custom House für ExCeL zu erreichen."
+
 }

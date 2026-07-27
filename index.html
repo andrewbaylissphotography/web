@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9051,6 +9051,7 @@
 
 
         function renderReviews() {
+            console.log("Translations when rendering reviews:", translations);
             const container = document.getElementById('reviews-container');
             container.innerHTML = "";
 
@@ -9129,12 +9130,13 @@
                 const translatedText =
                     translations[review.text] || review.text;
 
-                card.innerHTML = `
-    <strong>${review.name}</strong><br>
-    <small>${translatedRole}</small>
-    <p>${translatedText}</p>
-    <div>${stars}</div>
-`;
+                                card.innerHTML = `
+                    <strong>${review.name}</strong><br>
+                    <small>${translatedRole}</small>
+                    <p>${translatedText}</p>
+                    <div>${stars}</div>
+                `;
+
 
 
                 card.appendChild(strip);
@@ -9511,7 +9513,9 @@
 
         });
 
-
+document.addEventListener("DOMContentLoaded", async () => {
+    await loadLanguage("en");
+});
     </script>
 
 </body>

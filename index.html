@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -1244,7 +1244,7 @@
             {
                 name: "--Vexpo--",
                 role: "event",
-                text: "...",
+                text: "Started in 2024 and has been getting bigger each year. 2026 talnet: cdwagVA, ironmouse, kumiVT, heavenly father, phaseconnect, oshi connect, Maids of England, honeko, risu chu, nichii, lumi and merryweather from astraline",
                 rating: 5,
 
                 tags: ["vexpo"]
@@ -1263,6 +1263,24 @@
 
         const galleryData = [
             // Add new gallery here:
+            {
+                id: "202609-twitchmeetup-cardiff",
+                title: "2026.09: Twitch Community Meetup - Cardiff",
+                year: "2026",
+                images: [
+
+                ]
+            },
+
+            {
+                id: "202609-vexpo",
+                title: "2026.09: Vexpo",
+                year: "2026",
+                images: [
+
+                ]
+            },
+
             {
                 id: "202608-mcmbrum",
                 title: "2026.08: MCM Birmignham",
@@ -1297,7 +1315,7 @@
                     { url: "https://1drv.ms/i/c/064c16dac0b13cbc/IQTU8_3x0WZTQbANISctNj-qAdowfw6wtcB5z6NjbwwP_X8?width=2848&height=4288", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/202608-mcm-brum/DSC_5899.JPG", tags: ["MCM", "MCM | MCM Birmingham"] },
                 ]
             },
-            
+
             {
                 id: "202607-japanexpoparis",
                 title: "2026.07: Japan Expo Paris",
@@ -9018,8 +9036,24 @@
                 const grid = document.createElement('div');
                 grid.className = 'portfolio-images';
 
-                // max 12 images
-                matchingImages.slice(0, 12).forEach(imgData => {
+                // Rotate Spotlight by 12 photos each week
+                const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+                const spotlightStartDate = new Date('2026-01-21T00:00:00');
+
+                const weeksPassed = Math.floor(
+                    (Date.now() - spotlightStartDate.getTime()) / WEEK_MS
+                );
+
+                const offset = (weeksPassed * 12) % matchingImages.length;
+
+                const rotatedImages = [
+                    ...matchingImages.slice(offset),
+                    ...matchingImages.slice(0, offset)
+                ];
+
+                // Show 12 photos from this week's position
+                rotatedImages.slice(0, 12).forEach(imgData => {
+
 
                     const img = document.createElement('img');
 
@@ -9187,7 +9221,7 @@
                 const translatedText =
                     translations[review.text] || review.text;
 
-                                card.innerHTML = `
+                card.innerHTML = `
                     <strong>${review.name}</strong><br>
                     <small>${translatedRole}</small>
                     <p>${translatedText}</p>
@@ -9570,9 +9604,9 @@
 
         });
 
-document.addEventListener("DOMContentLoaded", async () => {
-    await loadLanguage("en");
-});
+        document.addEventListener("DOMContentLoaded", async () => {
+            await loadLanguage("en");
+        });
     </script>
 
 </body>

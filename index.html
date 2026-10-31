@@ -946,6 +946,10 @@
         .language-option:hover {
             background: rgba(255, 255, 255, .15);
         }
+
+        .review-text {
+            white-space: pre-wrap;
+        }
     </style>
 </head>
 
@@ -1031,7 +1035,7 @@
                             English
                         </div>
 
-<!--                         <div class="language-option" data-lang="cy">
+                        <!--                         <div class="language-option" data-lang="cy">
                             <span class="fi fi-gb-wls"></span>
                             Cymraeg
                         </div>
@@ -1154,7 +1158,14 @@
             {
                 name: "--Insomnia Gaming Festival--",
                 role: "event",
-                text: "This event is split into 2 parts. you have the convention side, which is your typical convention but with more of a gaming focus, then you have the LAN side. The LAN offers a space that is open from 6PM Friday to 6PM Sunday - a full 72 hours. There are also facilties that are open for LAN",
+                text:
+                    `
+This event is split into 2 parts. you have the convention side, which is your typical convention but with more of a gaming focus, then you have the LAN side.
+
+The LAN offers a space that is open from 6PM Friday to 6PM Sunday - a full 72 hours.
+
+There are also facilties that are open for LAN.
+                `,
                 rating: 5,
 
                 tags: ["Insomina Gaming Festival"]
@@ -1244,17 +1255,36 @@
             {
                 name: "--Vexpo--",
                 role: "event",
-                text: "Started in 2024 and has been getting bigger each year. 2026 talnet: cdwagVA, ironmouse, kumiVT, heavenly father, phaseconnect, oshi connect, Maids of England, honeko, risu chu, nichii, lumi and merryweather from astraline",
+                text: `
+Started in 2024 and has been getting bigger each year. 
+
+2026 talnet: cdwagVA, ironmouse, kumiVT, heavenly father, phaseconnect, oshi connect, Maids of England, honeko, risu chu, nichii, lumi and merryweather from astraline.
+`,
                 rating: 5,
 
                 tags: ["vexpo"]
+            },
+
+            {
+                name: "--Runefest--",
+                role: "event",
+                text: `
+Runefest is different to other events ive been to. other events often have an artist alley, theme-adjacent vendors and panel.
+
+Runefest doesnt have any of that. its panels are from the Jmods, the only merch is the official stall.
+
+there are plenty of party games and collectables. you really do feel you are in the land of Gilinor.
+`,
+                rating: 5,
+
+                tags: ["runescape"]
             }
 
         ];
 
         const spotlightCategories = [
             "Edits",
-            "Triple Threat Cosplay",
+            "Iron Warrior Cosplay",
             "Metal Gear Solid",
             "Ashleigh Jay Cosplay",
             "Wedding",
@@ -6471,50 +6501,52 @@
             },
 
             {
-                id: "20161204_cosplay-at-bewt-studios",
+                id: "20161204_cosplay_at_bewt_studios",
                 title: "2016.12.04: Cosplay at Bewt Studios",
                 year: "2016",
                 images: [
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGB8wAAAAAAAQJBb5F3564eu4?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGCcwAAAAAADv_Fw-sByFcKy0?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGBMwAAAAAAHzAVMNx3rB36DY?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGC8wAAAAAAMG9zagh1Wq0OnU?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGCMwAAAAAAMQG91ME_7aQlKc?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGDMwAAAAAAMZ0BzJsecWqMj4?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGD8wAAAAAAPopKjiyOFriu6w?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGEcwAAAAAAO7uOCmVBtXrW_8?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGDswAAAAAACw4y4dV63BYEok?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGGMwAAAAAABvMimz2NFWkv0g?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGF8wAAAAAAMG5CwKHhZbYqug?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGFswAAAAAAES2gNnhron5dZU?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGHMwAAAAAAOrOWOPEiA1nlcU?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGGswAAAAAAGyjEFf5m77-Vdk?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGI8wAAAAAADnGhlKYvDEG6FE?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGJMwAAAAAADqhAfqpmbqv9rc?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGIswAAAAAACHi6Gi1aT8TQc0?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGKMwAAAAAANmMC7QhUZLEFfU?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGKswAAAAAAHclH2aZpSnLKVg?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/IQS8PLHA2hZMIIAGJswAAAAAAdBZVQF-6fgJXx7fDjdXVMw?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGK8wAAAAAAKONNYQUymaG9CA?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/IQS8PLHA2hZMIIAGLswAAAAAAbl_yYH654kepxzxRvcwJMo?", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGBswAAAAAAP8HPpfWC6H4WPc?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3106.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGB8wAAAAAAAQJBb5F3564eu4?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3114.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGCcwAAAAAADv_Fw-sByFcKy0?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3123.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGBMwAAAAAAHzAVMNx3rB36DY?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3127.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGC8wAAAAAAMG9zagh1Wq0OnU?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3149.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGCMwAAAAAAMQG91ME_7aQlKc?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3151.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGDMwAAAAAAMZ0BzJsecWqMj4?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3162.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGD8wAAAAAAPopKjiyOFriu6w?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3172.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGEcwAAAAAAO7uOCmVBtXrW_8?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3177.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGDswAAAAAACw4y4dV63BYEok?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3179.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGGMwAAAAAABvMimz2NFWkv0g?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3203.JPG", tags: ["bewt studios", "mesh"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGF8wAAAAAAMG5CwKHhZbYqug?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3206.JPG", tags: ["bewt studios", "mesh"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGFswAAAAAAES2gNnhron5dZU?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3216.JPG", tags: ["bewt studios", "mesh"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGHMwAAAAAAOrOWOPEiA1nlcU?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3221.JPG", tags: ["bewt studios", "mesh"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGGswAAAAAAGyjEFf5m77-Vdk?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3238.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGI8wAAAAAADnGhlKYvDEG6FE?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3249.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGJMwAAAAAADqhAfqpmbqv9rc?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3257.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGIswAAAAAACHi6Gi1aT8TQc0?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3263.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGKMwAAAAAANmMC7QhUZLEFfU?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3269.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGKswAAAAAAHclH2aZpSnLKVg?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3283.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/IQS8PLHA2hZMIIAGJswAAAAAAdBZVQF-6fgJXx7fDjdXVMw?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3298.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGK8wAAAAAAKONNYQUymaG9CA?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3312.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/IQS8PLHA2hZMIIAGLswAAAAAAbl_yYH654kepxzxRvcwJMo?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3323.JPG", tags: ["bewt studios"] },
 
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGBcwAAAAAACoLa1wuO7nWhqI?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGCswAAAAAAMSz501_EmwTUY4?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGEswAAAAAAJSdQQmNVwB9tPQ?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGEMwAAAAAAERK9Q5akIAvVw4?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGFMwAAAAAAIRIRZZFFJGw9ck?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGE8wAAAAAAARkRpHP3HVWIwk?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGFcwAAAAAANm3h7uV2dh9uZs?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGGcwAAAAAAGC0NvK0iSlhRDM?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGIMwAAAAAAKrOEE3MN6lGuXQ?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGHcwAAAAAAN9m0InT1gmr7-E?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGG8wAAAAAAK_2mcINjXOjArw?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGH8wAAAAAAGlE7GAhTVA350Y?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGHswAAAAAAFUsuqS2RhdQcfs?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGIcwAAAAAAN26fnbpA9sxq6s?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGJ8wAAAAAAPf43BAK2bhOWd8?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGJcwAAAAAAO5x98yL8pMJjA8?", tags: ["bewt studios"] },
-                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGKcwAAAAAAHJpzA1HzO881uI?", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGBcwAAAAAACoLa1wuO7nWhqI?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3116.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGCswAAAAAAMSz501_EmwTUY4?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3131.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGDcwAAAAAAAtDFo-WFXPjfZA?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3169.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGEswAAAAAAJSdQQmNVwB9tPQ?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3175.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGEMwAAAAAAERK9Q5akIAvVw4?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3180.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGFMwAAAAAAIRIRZZFFJGw9ck?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3185.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGE8wAAAAAAARkRpHP3HVWIwk?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3189.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGFcwAAAAAANm3h7uV2dh9uZs?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3192.JPG", tags: ["bewt studios", "mesh"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGGcwAAAAAAGC0NvK0iSlhRDM?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3196.JPG", tags: ["bewt studios", "mesh"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGIMwAAAAAAKrOEE3MN6lGuXQ?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3217.JPG", tags: ["bewt studios", "mesh"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGHcwAAAAAAN9m0InT1gmr7-E?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3241.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGG8wAAAAAAK_2mcINjXOjArw?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3244.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGH8wAAAAAAGlE7GAhTVA350Y?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3245.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGHswAAAAAAFUsuqS2RhdQcfs?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3248.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGIcwAAAAAAN26fnbpA9sxq6s?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3262.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGJ8wAAAAAAPf43BAK2bhOWd8?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3296.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGJcwAAAAAAO5x98yL8pMJjA8?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3317.JPG", tags: ["bewt studios"] },
+                    { url: "https://1drv.ms/i/c/064c16dac0b13cbc/UQS8PLHA2hZMIIAGKcwAAAAAAHJpzA1HzO881uI?", fallbackUrl: "https://raw.githubusercontent.com/andrewbaylissphotography/web/main/img/20161204_cosplay_at_bewt_studios/DSC_3321.JPG", tags: ["bewt studios"] },
                 ]
             },
 
@@ -9318,7 +9350,7 @@
                 card.innerHTML = `
                     <strong>${review.name}</strong><br>
                     <small>${translatedRole}</small>
-                    <p>${translatedText}</p>
+                    <p class="review-text">${translatedText}</p>
                     <div>${stars}</div>
                 `;
 
